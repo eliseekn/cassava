@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto/Roboto-Regular.eot");
+  src: url("/assets/fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/assets/fonts/Roboto/Roboto-Bold.eot");
+  src: url("/assets/fonts/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baloo-Bhai";
+  src: url("/assets/fonts/Baloo-Bhai/BalooBhai-Regular.eot");
+  src: url("/assets/fonts/Baloo-Bhai/BalooBhai-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 1.5em 0;
+  position: absolute;
+  width: 100%;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  max-width: 250px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li:nth-child(1), nav ul li:nth-child(2) {
+  margin-right: 2em;
+}
+nav ul a {
+  color: white;
+  font-family: "Baloo-Bhai";
+  text-shadow: 0 0 2px black;
+  font-size: 1.3em;
+}
+nav ul a:hover {
+  color: #63a644;
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/hero.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  color: white;
+  font-family: "Baloo-Bhai";
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  margin-bottom: 1em;
+}
+
+.button-link {
+  cursor: pointer;
+  padding: 0.8em 2em !important;
+  font-size: 1.3rem;
+  font-family: "Baloo-Bhai";
+  border: none;
+  border-radius: 5px;
+}
+
+.button-link__header {
+  background-color: #63a644;
+  color: white;
+}
+.button-link__header:hover {
+  background-color: #734429;
+}
+
+.button-link__section {
+  background-color: #734429;
+  color: white;
+}
+.button-link__section:hover {
+  background-color: #63a644;
+}
+
+.button-link__footer {
+  background-color: white !important;
+  color: #734429 !important;
+}
+.button-link__footer:hover {
+  background-color: #734429 !important;
+  color: white !important;
+}
+
+.section-about,
+.section-how,
+.section-contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-about__header,
+.section-about__content,
+.section-how__header,
+.section-how__content,
+.section-contact__header,
+.section-contact__content {
+  padding: 2em;
+}
+
+.section-about__header h2,
+.section-how__header h2 {
+  font-family: "Baloo-Bhai";
+  font-size: 2rem;
+  color: #734429;
+  margin-bottom: 0.5em;
+}
+.section-about__header hr,
+.section-how__header hr {
+  width: 100px;
+  border-width: 2px;
+  border-color: #734429;
+  margin: 0 auto;
+}
+
+.section-about__content p {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3em;
+}
+
+.section-how__content {
+  display: flex;
+  margin-bottom: 2em;
+}
+.section-how__content div {
+  padding: 3em 2em;
+}
+.section-how__content li {
+  font-size: 3rem;
+  color: #63a644;
+  margin-bottom: 0.5em;
+}
+.section-how__content h3 {
+  font-family: "Baloo-Bhai";
+  font-size: 1.4rem;
+  color: #734429;
+  margin-bottom: 0.5em;
+}
+.section-how__content p {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3em;
+}
+
+.section-contact {
+  background: linear-gradient(to right, rgba(99, 166, 68, 0.9), rgba(99, 166, 68, 0.9)), url("/assets/img/tubercules-manioc.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-contact p {
+  color: white;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3em;
+}
+
+.section-contact__header h2 {
+  font-family: "Baloo-Bhai";
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5em;
+}
+.section-contact__header hr {
+  width: 100px;
+  border-width: 2px;
+  border-color: white;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .row {
+  display: flex;
+  width: 100%;
+}
+form .row .col {
+  padding: 0 1em;
+  width: 100%;
+}
+form .row .col input {
+  margin-bottom: 1.9em;
+  padding: 0.12em 0;
+}
+form .row .col input, form .row .col textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid white;
+  color: white;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.2rem;
+}
+form .row .col input:focus, form .row .col textarea:focus {
+  border-color: #734429;
+}
+form .row .col:first-child {
+  display: flex;
+  flex-direction: column;
+}
+form textarea {
+  resize: none;
+}
+form input[type=submit] {
+  margin: 1em 0;
+}
+
+footer {
+  background-color: #734429;
+  text-align: center;
+  color: white;
+  padding: 1.5em;
+}
+footer p {
+  color: white;
+  font-family: "Baloo-Bhai";
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+footer a {
+  color: #f2e205ff;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/assets/fonts/Roboto/Roboto-Regular.eot');
+    src: url('/assets/fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/assets/fonts/Roboto/Roboto-Bold.eot');
+    src: url('/assets/fonts/Roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloo-Bhai';
+    src: url('/assets/fonts/Baloo-Bhai/BalooBhai-Regular.eot');
+    src: url('/assets/fonts/Baloo-Bhai/BalooBhai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$headers-font: "Baloo-Bhai";
+$text-font-regular: "Roboto-Regular";
+$text-font-bold: "Roboto-Bold";

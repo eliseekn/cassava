@@ -1,0 +1,316 @@
+@import "fonts";
+@import "colors";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $text-font-regular, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.container {
+    width: 95%;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1.5em 0;
+    position: absolute;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        max-width: 250px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li:nth-child(1), li:nth-child(2) {
+            margin-right: 2em;
+        }
+
+        a {
+            color: white;
+            font-family: $headers-font;
+            text-shadow: 0 0 2px black;
+            font-size: 1.3em;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
+
+.hero {
+    background: linear-gradient(
+        to right,
+        rgba(black, .6), rgba(black, .6)
+        ), url("/assets/img/hero.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: $headers-font;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 0 0 2px black;
+        margin-bottom: 1em;
+    }
+}
+
+.button-link {
+    cursor: pointer;
+    padding: .8em 2em !important;
+    font-size: 1.3rem;
+    font-family: $headers-font;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-link__header {
+    background-color: $green;
+    color: white;
+
+    &:hover {
+        background-color: $brown;
+    }
+}
+
+.button-link__section {
+    background-color: $brown;
+    color: white;
+
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.button-link__footer {
+    background-color: white !important;
+    color: $brown !important;
+
+    &:hover {
+        background-color: $brown !important;
+        color: white !important;
+    }
+}
+
+.section-about,
+.section-how, 
+.section-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-about__header, 
+.section-about__content,
+.section-how__header, 
+.section-how__content,
+.section-contact__header,
+.section-contact__content {
+    padding: 2em;
+}
+
+.section-about__header,
+.section-how__header {
+    h2 {
+        font-family: $headers-font;
+        font-size: 2rem;
+        color: $brown;
+        margin-bottom: .5em;
+    }
+
+    hr {
+        width: 100px;
+        border-width: 2px;
+        border-color: $brown;
+        margin: 0 auto;
+    }
+}
+
+.section-about__content {
+    p {
+        font-family: $text-font-regular, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 3em;
+    }
+}
+
+.section-how__content {
+    display: flex;
+    margin-bottom: 2em;
+
+    div {
+        padding: 3em 2em;
+    }
+
+    li {
+        font-size: 3rem;
+        color: $green;
+        margin-bottom: .5em;
+    }
+
+    h3 {
+        font-family: $headers-font;
+        font-size: 1.4rem;
+        color: $brown;
+        margin-bottom: .5em;
+    }
+
+    p {
+        font-family: $text-font-regular, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 3em;
+    }
+}
+
+.section-contact {
+    background: linear-gradient(
+        to right,
+        rgba($green, .9), rgba($green, .9)
+        ), url("/assets/img/tubercules-manioc.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    p {
+        color: white;
+        font-family: $text-font-bold, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 3em;
+    }
+}
+
+.section-contact__header {
+    h2 {
+        font-family: $headers-font;
+        font-size: 2rem;
+        color: white;
+        margin-bottom: .5em;
+    }
+
+    hr {
+        width: 100px;
+        border-width: 2px;
+        border-color: white;
+        margin: 0 auto;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .row {
+        display: flex;
+        width: 100%;
+
+        .col {
+            padding: 0 1em;
+            width: 100%;
+
+            input {
+                margin-bottom: 1.9em;
+                padding: .12em 0;
+            }
+
+            input, textarea {
+                width: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                border-bottom: 3px solid white;
+                color: white;
+                font-family: $text-font-regular, sans-serif;
+                font-size: 1.2rem;
+
+                &:focus {
+                    border-color: $brown;
+                }
+            }
+        }
+
+        .col:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input[type=submit] {
+        margin: 1em 0;
+    }
+}
+
+footer {
+    background-color: $brown;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+
+    p {
+        color: white;
+        font-family: $headers-font;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+
+    a {
+        color: #f2e205ff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
