@@ -161,7 +161,7 @@ nav ul {
   display: flex;
   align-items: center;
 }
-nav ul li:nth-child(1), nav ul li:nth-child(2) {
+nav ul div:nth-child(1), nav ul div:nth-child(2) {
   margin-right: 2em;
 }
 nav ul a {
@@ -173,164 +173,68 @@ nav ul a {
 nav ul a:hover {
   color: #63a644;
 }
-
-.hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/hero.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-}
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.hero h1 {
-  color: white;
-  font-family: "Baloo-Bhai";
-  font-size: 2.5rem;
-  text-align: center;
+nav ul li {
   text-shadow: 0 0 2px black;
+}
+nav .fa-shopping-cart, nav .fa-user {
+  margin-right: 0.2em;
+  font-size: 1.3rem;
+  color: #63a644;
+}
+
+.section-products .container {
+  padding: 5em 0;
+  display: flex;
+}
+.section-products h4 {
+  font-family: "Baloo-Bhai";
+  font-size: 1.8rem;
+  color: #734429;
+  margin-bottom: 0.5em;
+}
+.section-products hr {
+  width: 100px;
+  border-width: 2px;
+  border-color: #734429;
+}
+
+.section-products__left {
+  widows: 30%;
+}
+.section-products__left input {
+  margin-top: 2em;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5em;
+}
+
+.section-products__right {
+  widows: 70%;
+  margin-left: 2em;
+}
+.section-products__right #products-list {
+  margin-top: 2em;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-products__right #products-list h5 {
+  font-size: 1.3rem;
+}
+.section-products__right #products-list .product-card {
+  width: 40%;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  padding: 2em 1em;
+  text-align: center;
+  line-height: 1.8;
+  border: 0;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+}
+.section-products__right #products-list .product-card p, .section-products__right #products-list .product-card a {
   margin-bottom: 1em;
 }
 
-.section-about,
-.section-how,
-.section-contact {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.section-about__header,
-.section-about__content,
-.section-how__header,
-.section-how__content,
-.section-contact__header,
-.section-contact__content {
-  padding: 2em;
-}
-
-.section-about__header h2,
-.section-how__header h2 {
-  font-family: "Baloo-Bhai";
-  font-size: 2rem;
-  color: #734429;
-  margin-bottom: 0.5em;
-}
-.section-about__header hr,
-.section-how__header hr {
-  width: 100px;
-  border-width: 2px;
-  border-color: #734429;
-  margin: 0 auto;
-}
-
-.section-about__content p {
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 3em;
-}
-
-.section-how__content {
-  display: flex;
-  margin-bottom: 2em;
-}
-.section-how__content div {
-  padding: 0 1em;
-  width: 50%;
-}
-.section-how__content li {
-  font-size: 3rem;
-  color: #63a644;
-  margin-bottom: 0.5em;
-}
-.section-how__content h3 {
-  font-family: "Baloo-Bhai";
-  font-size: 1.4rem;
-  color: #734429;
-  margin-bottom: 0.5em;
-}
-.section-how__content p {
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 3em;
-}
-.section-how__content span {
-  font-family: "Roboto-Bold", sans-serif;
-}
-
-.section-contact {
-  background: linear-gradient(to right, rgba(99, 166, 68, 0.9), rgba(99, 166, 68, 0.9)), url("/assets/img/tubercules-manioc.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.section-contact p {
-  color: white;
-  font-family: "Roboto-Bold", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 3em;
-}
-
-.section-contact__header h2 {
-  font-family: "Baloo-Bhai";
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 0.5em;
-}
-.section-contact__header hr {
-  width: 100px;
-  border-width: 2px;
-  border-color: white;
-  margin: 0 auto;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-form .row {
-  display: flex;
-  width: 100%;
-}
-form .row .col {
-  padding: 0 1em;
-  width: 100%;
-}
-form .row .col input {
-  margin-bottom: 1.9em;
-  padding: 0.12em 0;
-}
-form .row .col input, form .row .col textarea {
-  width: 100%;
-  border: none;
-  outline: none;
-  background: none;
-  border-bottom: 3px solid white;
-  color: white;
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 1.2rem;
-}
-form .row .col input:focus, form .row .col textarea:focus {
-  border-color: #734429;
-}
-form .row .col:first-child {
-  display: flex;
-  flex-direction: column;
-}
-form textarea {
-  resize: none;
-}
-form input[type=submit] {
-  margin: 1em 0;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=market.css.map */

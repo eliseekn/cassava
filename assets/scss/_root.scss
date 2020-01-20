@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.container {
+    width: 95%;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(
+        to right,
+        rgba(black, .6), rgba(black, .6)
+        ), url("/assets/img/hero.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: $headers-font;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 0 0 2px black;
+        margin-bottom: 1em;
+    }
+}
+
+.button-link {
+    cursor: pointer;
+    padding: .8em 2em !important;
+    font-size: 1.3rem;
+    font-family: $headers-font;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-link__header {
+    background-color: $green;
+    color: white;
+
+    &:hover {
+        background-color: $brown;
+        box-shadow: 0 0 5px $brown;
+    }
+}
+
+.button-link__section {
+    background-color: $brown;
+    color: white;
+
+    &:hover {
+        background-color: $green;
+        box-shadow: 0 0 5px $green;
+    }
+}
+
+.button-link__footer {
+    background-color: white !important;
+    color: $brown !important;
+
+    &:hover {
+        background-color: $brown !important;
+        color: white !important;
+        box-shadow: 0 0 5px $brown !important;
+    }
+}
+
+footer {
+    background-color: $brown;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+
+    p {
+        color: white;
+        font-family: $headers-font;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+
+    a {
+        color: #f2e205ff;
+    }
+}
+
+#scroll-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 11;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: $brown;
+
+    &:hover {
+        color: $green;
+        box-shadow: 0 0 5px $brown !important;
+    }
+}

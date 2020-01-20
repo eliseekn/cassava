@@ -1,41 +1,6 @@
 @import "fonts";
 @import "colors";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: $text-font-regular, sans-serif;
-}
-
-img {
-    width: 100%;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.container {
-    width: 95%;
-    max-width: 1030px;
-    margin: 0 auto;
-}
+@import "root";
 
 nav {
     padding: 1.5em 0;
@@ -64,7 +29,7 @@ nav {
             color: white;
             font-family: $headers-font;
             text-shadow: 0 0 2px black;
-            font-size: 1.3em;
+            font-size: 1.3rem;
 
             &:hover {
                 color: $green;
@@ -97,43 +62,6 @@ nav {
         text-align: center;
         text-shadow: 0 0 2px black;
         margin-bottom: 1em;
-    }
-}
-
-.button-link {
-    cursor: pointer;
-    padding: .8em 2em !important;
-    font-size: 1.3rem;
-    font-family: $headers-font;
-    border: none;
-    border-radius: 5px;
-}
-
-.button-link__header {
-    background-color: $green;
-    color: white;
-
-    &:hover {
-        background-color: $brown;
-    }
-}
-
-.button-link__section {
-    background-color: $brown;
-    color: white;
-
-    &:hover {
-        background-color: $green;
-    }
-}
-
-.button-link__footer {
-    background-color: white !important;
-    color: $brown !important;
-
-    &:hover {
-        background-color: $brown !important;
-        color: white !important;
     }
 }
 
@@ -187,7 +115,8 @@ nav {
     margin-bottom: 2em;
 
     div {
-        padding: 3em 2em;
+        padding: 0 1em;
+        width: 50%;
     }
 
     li {
@@ -208,6 +137,10 @@ nav {
         font-size: 1.2rem;
         line-height: 1.8;
         margin-bottom: 3em;
+    }
+
+    span {
+        font-family: $text-font-bold, sans-serif;
     }
 }
 
@@ -290,27 +223,5 @@ form {
 
     input[type=submit] {
         margin: 1em 0;
-    }
-}
-
-footer {
-    background-color: $brown;
-    text-align: center;
-    color: white;
-    padding: 1.5em;
-
-    p {
-        color: white;
-        font-family: $headers-font;
-        font-size: 1.2rem;
-        line-height: 1.8;
-    }
-
-    a {
-        color: #f2e205ff;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 }
