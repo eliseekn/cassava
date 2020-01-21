@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Cassava - Formation & Conseils sur la production et la transformation du manioc</title>
+    <title>Cassava - Formation et Conseils sur la production et la transformation du manioc</title>
 
     <meta name="author" content="eliseekn">
     <meta name="keywords" content="manioc, cassava, production manioc, transformation manioc, formations manioc">
@@ -33,116 +33,53 @@
     <meta name="msapplication-square310x310logo" content="assets/img/logo/favicon/mstile-310x310.png" />
 
     <link rel="stylesheet" href="vendor/fontawesome-5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/school.css">
 
     <script src="vendor/jquery-3.4.1.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/school.js"></script>
 </head>
 <body id="page-top">
-    <nav>
+    <nav class="nav-menu">
         <div class="container">
             <a href="#" title="Accueil">
                 <img src="assets/img/logo/logo_3.png" alt="Logo">
             </a>
 
             <ul>
-                <li><a href="#a-propos">A propos</a></li>
-                <li><a href="#comment-ca-marche">Comment ça marche?</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <div><a href="index.html">Accueil</a></div>
+
+                <div>
+                    <a href="">
+                        <li class="fas fa-user"></li> Connexion
+                    </a>
+                </div>
             </ul>
         </div>
     </nav>
 
     <div class="hero">
         <div class="container">
-            <h1>De la production à la transformation du manioc, nous vous accompagnons tout au long du processus.</h1>
-            <a href="#a-propos" class="button-link button-link__header">En savoir plus</a>
+            <h1>Plateforme de formation sur la production et la transformation du manioc.</h1>
+            <a href="#formations" class="button-link button-link__header">Voir les formations</a>
         </div>
     </div>
 
-    <section class="section-about" id="a-propos">
+    <section class="section-courses" id="formations">
         <div class="container">
-            <div class="section-about__header">
-                <h2>A propos</h2>
-                <hr noshade="noshade">
-            </div>
-    
-            <div class="section-about__content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua.
-                </p>
-                    
-                <a href="#comment-ca-marche" class="button-link button-link__section">Comment ça marche?</a>
-            </div>
-        </div>
-    </section>
+            <div id="courses-list"></div>
 
-    <section class="section-how" id="comment-ca-marche">
-        <div class="container">
-            <div class="section-how__header">
-                <h2>Comment ça marche?</h2>
-                <hr noshade="noshade">
-            </div>
-    
-            <div class="section-how__content">
-                <div>
-                    <li class="fas fa-chalkboard-teacher"></li>
-                    <h3>Cassava School</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor  incididunt ut labore et 
-                        dolore magna aliqua.
-                    </p>
-                    <a href="school.html" class="button-link button-link__section">Voir les formations</a>
-                </div>
-    
-                <div>
-                    <li class="fas fa-shopping-cart"></li>
-                    <h3>Cassava Market</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor  incididunt ut labore et 
-                        dolore magna aliqua.
-                    </p>
-                    <a href="market.html" class="button-link button-link__section">Visiter le marché</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            <nav class="pagination-bar">
+                <ul class="pagination">
+                    <a href="#" class="current-page" title="Page 1">1</a>
+                    <a href="#" title="Page 2">2</a>
+                    <a href="#" title="Page 3">3</a>
 
-    <section class="section-contact" id="contact">
-        <div class="container">
-            <div class="section-contact__header">
-                <h2>Contact</h2>
-                <hr noshade="noshade">
-            </div>
-    
-            <div class="section-contact__content">
-                <form action="">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" id="name" placeholder="Nom">
-                            <input type="email" id="email" placeholder="Email">
-                            <input type="text" id="subject" placeholder="Objet">
-                        </div>
-        
-                        <div class="col">
-                            <textarea id="message" rows="6" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    
-                    <input type="submit" value="Envoyer" class="button-link button-link__footer">
-                </form>
-        
-                <p>Ou appelez au +225 00 00 00 00</p>
-            </div>
+                    <a href="#" title="Suivant">
+                        <li class="fas fa-angle-double-right"></li>
+                    </a>
+                </ul>
+            </nav>
         </div>
     </section>
 
@@ -152,7 +89,9 @@
 
     <footer>
         <div class="container">
-            <p>Copyright © 2019 <a href="">Cassava</a></p>
+            <p>
+               Copyright <i class="far fa-copyright"></i> 2019 <a href="">Cassava</a>
+            </p>
         </div>
     </footer>
 </body>

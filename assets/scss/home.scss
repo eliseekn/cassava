@@ -1,6 +1,4 @@
-@import "fonts";
-@import "colors";
-@import "root";
+@import "main";
 
 nav {
     padding: 1.5em 0;
@@ -63,6 +61,11 @@ nav {
         text-shadow: 0 0 2px black;
         margin-bottom: 1em;
     }
+
+    img {
+        max-width: 500px;
+        margin-bottom: 2em;
+    }
 }
 
 .section-about,
@@ -81,7 +84,7 @@ nav {
 .section-how__content,
 .section-contact__header,
 .section-contact__content {
-    padding: 2em;
+    padding: 2em 0;
 }
 
 .section-about__header,
@@ -102,6 +105,8 @@ nav {
 }
 
 .section-about__content {
+    padding: 0 5em;
+    
     p {
         font-family: $text-font-regular, sans-serif;
         font-size: 1.2rem;
@@ -161,6 +166,11 @@ nav {
     }
 }
 
+.section-contact__header,
+.section-contact__content {
+    margin-top: 2em;
+}
+
 .section-contact__header {
     h2 {
         font-family: $headers-font;
@@ -185,13 +195,14 @@ form {
     .row {
         display: flex;
         width: 100%;
+        margin-bottom: 2em;
 
         .col {
             padding: 0 1em;
             width: 100%;
 
             input {
-                margin-bottom: 1.9em;
+                margin-bottom: 1.2em;
                 padding: .12em 0;
             }
 
@@ -222,6 +233,6 @@ form {
     }
 
     input[type=submit] {
-        margin: 1em 0;
+        margin-bottom: 1em;
     }
 }

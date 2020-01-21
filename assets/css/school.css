@@ -205,55 +205,29 @@ footer a {
   color: #63a644;
 }
 
-.section-products {
+.section-courses {
   padding: 5em 0;
-}
-.section-products .container {
   display: flex;
 }
-.section-products .container .section-products__left {
-  width: 30%;
+.section-courses .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.section-products .container .section-products__right {
-  width: 70%;
-}
-.section-products h4 {
-  font-family: "Baloo-Bhai";
-  font-size: 1.8rem;
-  color: #734429;
-  margin-bottom: 0.5em;
-}
-.section-products hr {
-  width: 100px;
-  border-width: 2px;
-  border-color: #734429;
-}
-
-.section-products__left input[type=search] {
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 1.2rem;
-  padding: 0.5em;
-  margin-top: 2em;
-}
-.section-products__left input[type=submit] {
-  margin-top: 1em;
-}
-
-.section-products__right {
-  margin-left: 2em;
-}
-.section-products__right #products-list {
+.section-courses #courses-list {
   margin-top: 2em;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.section-products__right #products-list h5 {
+.section-courses #courses-list h5 {
   font-size: 1.3rem;
   margin: 0.5em 0;
+  margin-bottom: 1.5em;
 }
-.section-products__right #products-list .product-card {
+.section-courses #courses-list .course-card {
   width: 40%;
   margin-right: 2em;
   margin-bottom: 2em;
@@ -262,11 +236,19 @@ footer a {
   box-shadow: 0 0 5px black;
   border-radius: 5px;
 }
-.section-products__right #products-list .product-card p {
-  margin-bottom: 1.5em;
-}
-.section-products__right #products-list .product-card div {
+.section-courses #courses-list .course-card div {
   padding-bottom: 2em;
 }
+.section-courses h4 {
+  font-family: "Baloo-Bhai";
+  font-size: 1.8rem;
+  color: #734429;
+  margin-bottom: 0.5em;
+}
+.section-courses hr {
+  width: 100px;
+  border-width: 2px;
+  border-color: #734429;
+}
 
-/*# sourceMappingURL=market.css.map */
+/*# sourceMappingURL=school.css.map */

@@ -1,0 +1,45 @@
+.nav-menu {
+    padding: 1.5em 0;
+    position: absolute;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        max-width: 250px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        div:nth-child(1), div:nth-child(2) {
+            margin-right: 2em;
+        }
+
+        a {
+            color: white;
+            font-family: $headers-font;
+            text-shadow: 0 0 2px black;
+            font-size: 1.3rem;
+
+            &:hover {
+                color: $green;
+            }
+        }
+
+        li {
+            text-shadow: 0 0 2px black;
+        }
+    }
+
+    .fa-shopping-cart, .fa-user {
+        margin-right: .2em;
+        font-size: 1.3rem;
+        color: $green;
+    }
+}

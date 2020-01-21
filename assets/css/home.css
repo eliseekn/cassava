@@ -118,7 +118,7 @@ footer {
 footer p {
   color: white;
   font-family: "Baloo-Bhai";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.8;
 }
 footer a {
@@ -142,6 +142,29 @@ footer a {
 #scroll-top:hover {
   color: #63a644;
   box-shadow: 0 0 5px #734429 !important;
+}
+
+.pagination-bar {
+  margin-top: 2em;
+}
+
+.pagination {
+  display: flex;
+}
+.pagination a {
+  font-family: "Baloo-Bhai";
+  font-size: 1.2rem;
+  border: 1px solid #734429;
+  color: #734429;
+  padding: 0.5em 1em;
+}
+.pagination a:hover {
+  color: white;
+  background-color: #734429;
+}
+.pagination .current-page {
+  color: white !important;
+  background-color: #734429 !important;
 }
 
 nav {
@@ -195,6 +218,10 @@ nav ul a:hover {
   text-shadow: 0 0 2px black;
   margin-bottom: 1em;
 }
+.hero img {
+  max-width: 500px;
+  margin-bottom: 2em;
+}
 
 .section-about,
 .section-how,
@@ -212,7 +239,7 @@ nav ul a:hover {
 .section-how__content,
 .section-contact__header,
 .section-contact__content {
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .section-about__header h2,
@@ -230,6 +257,9 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
+.section-about__content {
+  padding: 0 5em;
+}
 .section-about__content p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.2rem;
@@ -279,6 +309,11 @@ nav ul a:hover {
   margin-bottom: 3em;
 }
 
+.section-contact__header,
+.section-contact__content {
+  margin-top: 2em;
+}
+
 .section-contact__header h2 {
   font-family: "Baloo-Bhai";
   font-size: 2rem;
@@ -300,13 +335,14 @@ form {
 form .row {
   display: flex;
   width: 100%;
+  margin-bottom: 2em;
 }
 form .row .col {
   padding: 0 1em;
   width: 100%;
 }
 form .row .col input {
-  margin-bottom: 1.9em;
+  margin-bottom: 1.2em;
   padding: 0.12em 0;
 }
 form .row .col input, form .row .col textarea {
@@ -330,7 +366,7 @@ form textarea {
   resize: none;
 }
 form input[type=submit] {
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=home.css.map */

@@ -1,3 +1,38 @@
+//typography
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/assets/fonts/Roboto/Roboto-Regular.eot');
+    src: url('/assets/fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/assets/fonts/Roboto/Roboto-Bold.eot');
+    src: url('/assets/fonts/Roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloo-Bhai';
+    src: url('/assets/fonts/Baloo-Bhai/BalooBhai-Regular.eot');
+    src: url('/assets/fonts/Baloo-Bhai/BalooBhai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$headers-font: "Baloo-Bhai";
+$text-font-regular: "Roboto-Regular";
+$text-font-bold: "Roboto-Bold";
+
+//colors
+$green: #63a644;
+$brown: #734429;
+$yellow: #f2e205ff;
+
+//main style
 * {
     margin: 0;
     padding: 0;
@@ -106,15 +141,16 @@ footer {
     p {
         color: white;
         font-family: $headers-font;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.8;
     }
 
     a {
-        color: #f2e205ff;
+        color: $yellow;
     }
 }
 
+//scroll to top button
 #scroll-top {
     position: fixed;
     display: none;
@@ -132,5 +168,32 @@ footer {
     &:hover {
         color: $green;
         box-shadow: 0 0 5px $brown !important;
+    }
+}
+
+//pagination
+.pagination-bar {
+    margin-top: 2em;
+}
+
+.pagination {
+    display: flex;
+
+    a {
+        font-family: $headers-font;
+        font-size: 1.2rem;
+        border: 1px solid $brown;
+        color: $brown;
+        padding: .5em 1em;
+
+        &:hover {
+            color: white;
+            background-color: $brown;
+        }
+    }
+
+    .current-page {
+        color: white !important;
+        background-color: $brown !important;
     }
 }

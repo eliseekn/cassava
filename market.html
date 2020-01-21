@@ -37,9 +37,10 @@
 
     <script src="vendor/jquery-3.4.1.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/market.js"></script>
 </head>
 <body id="page-top">
-    <nav>
+    <nav class="nav-menu">
         <div class="container">
             <a href="#" title="Accueil">
                 <img src="assets/img/logo/logo_3.png" alt="Logo">
@@ -49,13 +50,15 @@
                 <div><a href="index.html">Accueil</a></div>
 
                 <div>
-                    <li class="fas fa-user"></li>
-                    <a href="">Connexion</a>
+                    <a href="">
+                        <li class="fas fa-user"></li> Connexion
+                    </a>
                 </div>
                 
                 <div>
-                    <li class="fas fa-shopping-cart"></li>
-                    <a href="">Panier (0)</a>
+                    <a href="">
+                        <li class="fas fa-shopping-cart"></li> Panier (0)
+                    </a>
                 </div>
             </ul>
         </div>
@@ -74,42 +77,29 @@
                 <h4>Rechercher</h4>
                 <hr noshade="noshade">
 
-                <input type="search" name="search" placeholder="Rechercher un produit">
+                <form action="">
+                    <input type="search" placeholder="Nom du produit">
+                    <input type="submit" value="Rechercher" class="button-link button-link__header">
+                </form>
             </div>
     
             <div class="section-products__right">
                 <h4>Tous les produits</h4>
                 <hr noshade="noshade">
 
-                <div id="products-list">
-                    <div class="product-card">
-                        <img src="assets/img/thumb.svg" alt="">
-                        <h5>Production de manioc</h5>
-                        <p>150000 FCFA</p>
-                        <a href="#" class="button-link button-link__header add-to-cart">Ajouter au panier</a>
-                    </div>
+                <div id="products-list"></div>
 
-                    <div class="product-card">
-                        <img src="assets/img/thumb.svg" alt="">
-                        <h5>Production de manioc</h5>
-                        <p>150000 FCFA</p>
-                        <a href="#" class="button-link button-link__header add-to-cart">Ajouter au panier</a>
-                    </div>
+                <nav class="pagination-bar">
+                    <ul class="pagination">
+                        <a href="#" class="current-page" title="Page 1">1</a>
+                        <a href="#" title="Page 2">2</a>
+                        <a href="#" title="Page 3">3</a>
 
-                    <div class="product-card">
-                        <img src="assets/img/thumb.svg" alt="">
-                        <h5>Production de manioc</h5>
-                        <p>150000 FCFA</p>
-                        <a href="#" class="button-link button-link__header add-to-cart">Ajouter au panier</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/img/thumb.svg" alt="">
-                        <h5>Production de manioc</h5>
-                        <p>150000 FCFA</p>
-                        <a href="#" class="button-link button-link__header add-to-cart">Ajouter au panier</a>
-                    </div>
-                </div>
+                        <a href="#" title="Suivant">
+                            <li class="fas fa-angle-double-right"></li>
+                        </a>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>
@@ -120,7 +110,9 @@
 
     <footer>
         <div class="container">
-            <p>Copyright © 2019 <a href="">Cassava</a></p>
+            <p>
+               Copyright <i class="far fa-copyright"></i> 2019 <a href="">Cassava</a>
+            </p>
         </div>
     </footer>
 </body>

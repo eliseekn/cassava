@@ -1,57 +1,19 @@
-@import "fonts";
-@import "colors";
-@import "root";
-
-nav {
-    padding: 1.5em 0;
-    position: absolute;
-    width: 100%;
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    img {
-        max-width: 250px;
-    }
-
-    ul {
-        display: flex;
-        align-items: center;
-
-        div:nth-child(1), div:nth-child(2) {
-            margin-right: 2em;
-        }
-
-        a {
-            color: white;
-            font-family: $headers-font;
-            text-shadow: 0 0 2px black;
-            font-size: 1.3rem;
-
-            &:hover {
-                color: $green;
-            }
-        }
-
-        li {
-            text-shadow: 0 0 2px black;
-        }
-    }
-
-    .fa-shopping-cart, .fa-user {
-        margin-right: .2em;
-        font-size: 1.3rem;
-        color: $green;
-    }
-}
+@import "main";
+@import "navmenu";
 
 .section-products {
+    padding: 5em 0;
+    
     .container {
-        padding: 5em 0;
         display: flex;
+
+        .section-products__left {
+            width: 30%;
+        }
+
+        .section-products__right {
+            width: 70%;
+        }
     }
 
     h4 {
@@ -69,18 +31,19 @@ nav {
 }
 
 .section-products__left {
-    widows: 30%;
-
-    input {
-        margin-top: 2em;
+    input[type=search] {
         font-family: $text-font-regular, sans-serif;
         font-size: 1.2rem;
         padding: .5em;
+        margin-top: 2em;
+    }
+
+    input[type=submit] {
+        margin-top: 1em;
     }
 }
 
 .section-products__right {
-    widows: 70%;
     margin-left: 2em;
 
     #products-list {
@@ -92,21 +55,24 @@ nav {
 
         h5 {
             font-size: 1.3rem;
+            margin: .5em 0;
         }
 
         .product-card {
             width: 40%;
             margin-right: 2em;
             margin-bottom: 2em;
-            padding: 2em 1em;
             text-align: center;
-            line-height: 1.8;
             border: 0;
             box-shadow: 0 0 5px black;
             border-radius: 5px;
 
-            p, a {
-                margin-bottom: 1em;
+            p {
+                margin-bottom: 1.5em;
+            }
+
+            div {
+                padding-bottom: 2em;
             }
         }
     }
