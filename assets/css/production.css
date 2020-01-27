@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto/Roboto-Regular.eot");
+  src: url("/assets/fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/assets/fonts/Roboto/Roboto-Bold.eot");
+  src: url("/assets/fonts/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baloo-Bhai";
+  src: url("/assets/fonts/Baloo-Bhai/BalooBhai-Regular.eot");
+  src: url("/assets/fonts/Baloo-Bhai/BalooBhai-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  padding: 1.5em 0;
+  position: absolute;
+  width: 100%;
+}
+.nav-menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu img {
+  max-width: 250px;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-menu ul a:nth-child(1), .nav-menu ul a:nth-child(2) {
+  margin-right: 1em;
+}
+.nav-menu ul a {
+  color: white;
+  font-family: "Roboto-Bold", sans-serif;
+  text-shadow: 0 0 2px black;
+  font-size: 1.3rem;
+}
+.nav-menu ul a:hover {
+  color: #63a644;
+}
+.nav-menu ul li {
+  text-shadow: 0 0 2px black;
+}
+.nav-menu .fa-shopping-cart, .nav-menu .fa-user {
+  margin-right: 0.2em;
+  font-size: 1.3rem;
+  color: #63a644;
+}
+
+.btn-link {
+  cursor: pointer;
+  padding: 0.8em 2em !important;
+  font-size: 1.2rem;
+  font-family: "Roboto-Regular", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-link__header {
+  background-color: #63a644;
+  color: white;
+}
+.btn-link__header:hover {
+  background-color: #734429;
+  box-shadow: 0 0 5px #734429;
+}
+
+.btn-link__section {
+  background-color: #734429;
+  color: white;
+}
+.btn-link__section:hover {
+  background-color: #63a644;
+  box-shadow: 0 0 5px #63a644;
+}
+
+.btn-link__footer {
+  background-color: white !important;
+  color: #734429 !important;
+}
+.btn-link__footer:hover {
+  background-color: #734429 !important;
+  color: white !important;
+  box-shadow: 0 0 5px #734429 !important;
+}
+
+footer {
+  background-color: #734429;
+  text-align: center;
+  color: white;
+  padding: 1.5em;
+}
+footer p {
+  color: white;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+footer a {
+  color: #f2e205ff;
+}
+
+#scroll-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 11;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: #734429;
+}
+#scroll-top:hover {
+  color: #63a644;
+  box-shadow: 0 0 5px #734429 !important;
+}
+
+.pagination-bar {
+  margin-top: 2em;
+}
+
+.pagination {
+  display: flex;
+}
+.pagination a {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid #734429;
+  color: #734429;
+  padding: 0.5em 1em;
+}
+.pagination a:hover {
+  color: white;
+  background-color: #734429;
+}
+.pagination .current-page {
+  color: white !important;
+  background-color: #734429 !important;
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/hero_production.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  color: white;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  margin-bottom: 1em;
+  line-height: 1.8;
+}
+
+.section-sheet__header,
+.section-sheet__content {
+  padding: 5em 0;
+}
+
+.section-sheet__header h2 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 2rem;
+  color: #734429;
+  margin-bottom: 0.5em;
+}
+.section-sheet__header hr {
+  width: 100px;
+  border-width: 2px;
+  border-color: #734429;
+}
+
+/*# sourceMappingURL=production.css.map */

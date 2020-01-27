@@ -9,7 +9,7 @@ $(function() {
                 <div>
                     <h5>Production de manioc</h5>
                     <p>150000 FCFA</p>
-                    <a href="#" class="button-link button-link__header add-to-cart">Ajouter au panier</a>
+                    <a href="#" class="btn-link btn-link__header add-to-cart">Ajouter au panier</a>
                 </div>
             </div>
         `;

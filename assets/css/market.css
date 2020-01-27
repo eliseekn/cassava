@@ -50,60 +50,76 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/hero.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
+.nav-menu {
+  padding: 1.5em 0;
+  position: absolute;
+  width: 100%;
 }
-.hero .container {
+.nav-menu .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.hero h1 {
+.nav-menu img {
+  max-width: 250px;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-menu ul a:nth-child(1), .nav-menu ul a:nth-child(2) {
+  margin-right: 1em;
+}
+.nav-menu ul a {
   color: white;
-  font-family: "Baloo-Bhai";
-  font-size: 2.5rem;
-  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
   text-shadow: 0 0 2px black;
-  margin-bottom: 1em;
+  font-size: 1.3rem;
+}
+.nav-menu ul a:hover {
+  color: #63a644;
+}
+.nav-menu ul li {
+  text-shadow: 0 0 2px black;
+}
+.nav-menu .fa-shopping-cart, .nav-menu .fa-user {
+  margin-right: 0.2em;
+  font-size: 1.3rem;
+  color: #63a644;
 }
 
-.button-link {
+.btn-link {
   cursor: pointer;
   padding: 0.8em 2em !important;
-  font-size: 1.3rem;
-  font-family: "Baloo-Bhai";
+  font-size: 1.2rem;
+  font-family: "Roboto-Regular", sans-serif;
   border: none;
   border-radius: 5px;
 }
 
-.button-link__header {
+.btn-link__header {
   background-color: #63a644;
   color: white;
 }
-.button-link__header:hover {
+.btn-link__header:hover {
   background-color: #734429;
   box-shadow: 0 0 5px #734429;
 }
 
-.button-link__section {
+.btn-link__section {
   background-color: #734429;
   color: white;
 }
-.button-link__section:hover {
+.btn-link__section:hover {
   background-color: #63a644;
   box-shadow: 0 0 5px #63a644;
 }
 
-.button-link__footer {
+.btn-link__footer {
   background-color: white !important;
   color: #734429 !important;
 }
-.button-link__footer:hover {
+.btn-link__footer:hover {
   background-color: #734429 !important;
   color: white !important;
   box-shadow: 0 0 5px #734429 !important;
@@ -117,7 +133,7 @@ footer {
 }
 footer p {
   color: white;
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
 }
@@ -152,7 +168,7 @@ footer a {
   display: flex;
 }
 .pagination a {
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.2rem;
   border: 1px solid #734429;
   color: #734429;
@@ -167,42 +183,27 @@ footer a {
   background-color: #734429 !important;
 }
 
-.nav-menu {
-  padding: 1.5em 0;
-  position: absolute;
-  width: 100%;
-}
-.nav-menu .container {
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/hero_market.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-.nav-menu img {
-  max-width: 250px;
-}
-.nav-menu ul {
+.hero .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.nav-menu ul div:nth-child(1), .nav-menu ul div:nth-child(2) {
-  margin-right: 2em;
-}
-.nav-menu ul a {
+.hero h1 {
   color: white;
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
   text-shadow: 0 0 2px black;
-  font-size: 1.3rem;
-}
-.nav-menu ul a:hover {
-  color: #63a644;
-}
-.nav-menu ul li {
-  text-shadow: 0 0 2px black;
-}
-.nav-menu .fa-shopping-cart, .nav-menu .fa-user {
-  margin-right: 0.2em;
-  font-size: 1.3rem;
-  color: #63a644;
+  margin-bottom: 1em;
+  line-height: 1.8;
 }
 
 .section-products {
@@ -218,7 +219,7 @@ footer a {
   width: 70%;
 }
 .section-products h4 {
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.8rem;
   color: #734429;
   margin-bottom: 0.5em;
@@ -246,17 +247,15 @@ footer a {
   margin-top: 2em;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.3rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .section-products__right #products-list h5 {
   font-size: 1.3rem;
   margin: 0.5em 0;
 }
 .section-products__right #products-list .product-card {
-  width: 40%;
-  margin-right: 2em;
-  margin-bottom: 2em;
   text-align: center;
   border: 0;
   box-shadow: 0 0 5px black;

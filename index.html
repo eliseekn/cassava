@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Cassava - Plateforme d'apprentissage sur la production et la transformation du manioc</title>
+    <title>Cassava - Mise en relation entre producteurs et acheteurs de manioc et produits dérivés</title>
 
     <meta name="author" content="eliseekn">
-    <meta name="keywords" content="manioc, cassava, production manioc, transformation manioc, formations manioc">
-    <meta name="description"
-        content="Cassava est une plateforme d'apprentissage sur la production et la transformation du manioc">
+    <meta name="keywords" content="manioc, production, transformation, commercialisation, mise en relation">
+    <meta name="description" content="Cassava met en relation les producteurs et acheteurs de manioc et produits dérivés">
 
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/logo/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114"
@@ -43,37 +42,29 @@
     <link rel="stylesheet" href="assets/css/home.css">
 
     <script src="vendor/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll-top.js"></script>
 </head>
-
 <body id="page-top">
+    <nav class="nav-menu">
+        <div class="container">
+            <a href="#" title="Accueil">
+                <img src="assets/img/logo/logo_3.png" alt="Logo">
+            </a>
+
+            <ul>
+                <a href="cassava-market.html">Cassava Market</a>
+                <a href="#contact">Contact</a>
+                <a href="">Connexion</a>
+            </ul>
+        </div>
+    </nav>
+
     <div class="hero">
         <div class="container">
-            <img src="assets/img/logo/logo_3.png" alt="Logo">
-            <h1>De la production à la transformation du manioc, nous vous accompagnons tout au long du processus.</h1>
-            <a href="#a-propos" class="button-link button-link__header">En savoir plus</a>
+            <h1>De la production à la transformation, nous assurons le suivi tout au long du processus.</h1>
+            <a href="#comment-ca-marche" class="btn-link btn-link__header">Comment ça marche?</a>
         </div>
     </div>
-
-    <section class="section-about" id="a-propos">
-        <div class="container">
-            <div class="section-about__header">
-                <h2>A propos</h2>
-                <hr noshade="noshade">
-            </div>
-
-            <div class="section-about__content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.
-                </p>
-
-                <a href="#comment-ca-marche" class="button-link button-link__section">Comment ça marche?</a>
-            </div>
-        </div>
-    </section>
 
     <section class="section-how" id="comment-ca-marche">
         <div class="container">
@@ -84,23 +75,24 @@
 
             <div class="section-how__content">
                 <div>
-                    <li class="fas fa-chalkboard-teacher"></li>
-                    <h3>Cassava School</h3>
-                    <p>
-                        <span>Cassava School</span> est une plateforme de formation sur la production
-                        et la transformation du manioc.
-                    </p>
-                    <a href="school.html" class="button-link button-link__section">Voir les formations</a>
+                    <li class="fas fa-seedling"></li>
+                    <h3>Production</h3>
+                    <p>Voulez-vous vous lancer dans la production de manioc ou améliorer la votre?</p>
+                    <a href="production.html" class="btn-link btn-link__section">Je veux produire</a>
+                </div>
+
+                <div>
+                    <li class="fas fa-cogs"></li>
+                    <h3>Transformation</h3>
+                    <p>Avez-vous besoin de vous former aux techniques de transformation du manioc?</p>
+                    <a href="transformation.html" class="btn-link btn-link__section">Je veux transformer</a>
                 </div>
 
                 <div>
                     <li class="fas fa-shopping-cart"></li>
-                    <h3>Cassava Market</h3>
-                    <p>
-                        <span>Cassava Market</span> est un marché de vente en ligne de manioc et produits
-                        dérivés.
-                    </p>
-                    <a href="market.html" class="button-link button-link__section">Visiter le marché</a>
+                    <h3>Commercialisation</h3>
+                    <p>Cherchez-vous un marché où écouler votre production de manioc ou autre produits dérivés?</p>
+                    <a href="commercialisation.html" class="btn-link btn-link__section">Je veux vendre</a>
                 </div>
             </div>
         </div>
@@ -117,9 +109,9 @@
                 <form action="">
                     <div class="row">
                         <div class="col">
-                            <input type="text" id="name" placeholder="Nom">
-                            <input type="email" id="email" placeholder="Email">
-                            <input type="text" id="subject" placeholder="Objet">
+                            <input type="text" id="name" placeholder="Nom" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="text" id="subject" placeholder="Objet" required>
                         </div>
 
                         <div class="col">
@@ -127,7 +119,7 @@
                         </div>
                     </div>
 
-                    <input type="submit" value="Envoyer" class="button-link button-link__footer">
+                    <input type="submit" value="Envoyer" class="btn-link btn-link__footer">
                 </form>
 
                 <p>Ou appelez au +225 00 00 00 00</p>

@@ -50,60 +50,76 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/hero.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
+.nav-menu {
+  padding: 1.5em 0;
+  position: absolute;
+  width: 100%;
 }
-.hero .container {
+.nav-menu .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.hero h1 {
+.nav-menu img {
+  max-width: 250px;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-menu ul a:nth-child(1), .nav-menu ul a:nth-child(2) {
+  margin-right: 1em;
+}
+.nav-menu ul a {
   color: white;
-  font-family: "Baloo-Bhai";
-  font-size: 2.5rem;
-  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
   text-shadow: 0 0 2px black;
-  margin-bottom: 1em;
+  font-size: 1.3rem;
+}
+.nav-menu ul a:hover {
+  color: #63a644;
+}
+.nav-menu ul li {
+  text-shadow: 0 0 2px black;
+}
+.nav-menu .fa-shopping-cart, .nav-menu .fa-user {
+  margin-right: 0.2em;
+  font-size: 1.3rem;
+  color: #63a644;
 }
 
-.button-link {
+.btn-link {
   cursor: pointer;
   padding: 0.8em 2em !important;
-  font-size: 1.3rem;
-  font-family: "Baloo-Bhai";
+  font-size: 1.2rem;
+  font-family: "Roboto-Regular", sans-serif;
   border: none;
   border-radius: 5px;
 }
 
-.button-link__header {
+.btn-link__header {
   background-color: #63a644;
   color: white;
 }
-.button-link__header:hover {
+.btn-link__header:hover {
   background-color: #734429;
   box-shadow: 0 0 5px #734429;
 }
 
-.button-link__section {
+.btn-link__section {
   background-color: #734429;
   color: white;
 }
-.button-link__section:hover {
+.btn-link__section:hover {
   background-color: #63a644;
   box-shadow: 0 0 5px #63a644;
 }
 
-.button-link__footer {
+.btn-link__footer {
   background-color: white !important;
   color: #734429 !important;
 }
-.button-link__footer:hover {
+.btn-link__footer:hover {
   background-color: #734429 !important;
   color: white !important;
   box-shadow: 0 0 5px #734429 !important;
@@ -117,7 +133,7 @@ footer {
 }
 footer p {
   color: white;
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
 }
@@ -152,7 +168,7 @@ footer a {
   display: flex;
 }
 .pagination a {
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.2rem;
   border: 1px solid #734429;
   color: #734429;
@@ -165,36 +181,6 @@ footer a {
 .pagination .current-page {
   color: white !important;
   background-color: #734429 !important;
-}
-
-nav {
-  padding: 1.5em 0;
-  position: absolute;
-  width: 100%;
-}
-nav .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav img {
-  max-width: 250px;
-}
-nav ul {
-  display: flex;
-  align-items: center;
-}
-nav ul li:nth-child(1), nav ul li:nth-child(2) {
-  margin-right: 2em;
-}
-nav ul a {
-  color: white;
-  font-family: "Baloo-Bhai";
-  text-shadow: 0 0 2px black;
-  font-size: 1.3rem;
-}
-nav ul a:hover {
-  color: #63a644;
 }
 
 .hero {
@@ -212,18 +198,14 @@ nav ul a:hover {
 }
 .hero h1 {
   color: white;
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 2.5rem;
   text-align: center;
   text-shadow: 0 0 2px black;
   margin-bottom: 1em;
-}
-.hero img {
-  max-width: 500px;
-  margin-bottom: 2em;
+  line-height: 1.8;
 }
 
-.section-about,
 .section-how,
 .section-contact {
   height: 100vh;
@@ -233,8 +215,6 @@ nav ul a:hover {
   text-align: center;
 }
 
-.section-about__header,
-.section-about__content,
 .section-how__header,
 .section-how__content,
 .section-contact__header,
@@ -242,14 +222,12 @@ nav ul a:hover {
   padding: 2em 0;
 }
 
-.section-about__header h2,
 .section-how__header h2 {
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 2rem;
   color: #734429;
   margin-bottom: 0.5em;
 }
-.section-about__header hr,
 .section-how__header hr {
   width: 100px;
   border-width: 2px;
@@ -257,19 +235,8 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
-.section-about__content {
-  padding: 0 5em;
-}
-.section-about__content p {
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 3em;
-}
-
 .section-how__content {
   display: flex;
-  margin-bottom: 2em;
 }
 .section-how__content div {
   padding: 0 1em;
@@ -281,7 +248,7 @@ nav ul a:hover {
   margin-bottom: 0.5em;
 }
 .section-how__content h3 {
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.4rem;
   color: #734429;
   margin-bottom: 0.5em;
@@ -290,10 +257,7 @@ nav ul a:hover {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
-  margin-bottom: 3em;
-}
-.section-how__content span {
-  font-family: "Roboto-Bold", sans-serif;
+  margin-bottom: 2em;
 }
 
 .section-contact {
@@ -309,13 +273,8 @@ nav ul a:hover {
   margin-bottom: 3em;
 }
 
-.section-contact__header,
-.section-contact__content {
-  margin-top: 2em;
-}
-
 .section-contact__header h2 {
-  font-family: "Baloo-Bhai";
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 2rem;
   color: white;
   margin-bottom: 0.5em;
@@ -327,25 +286,25 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
-form {
+.section-contact__content form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-form .row {
+.section-contact__content form .row {
   display: flex;
   width: 100%;
   margin-bottom: 2em;
 }
-form .row .col {
+.section-contact__content form .row .col {
   padding: 0 1em;
   width: 100%;
 }
-form .row .col input {
+.section-contact__content form .row .col input {
   margin-bottom: 1.2em;
   padding: 0.12em 0;
 }
-form .row .col input, form .row .col textarea {
+.section-contact__content form .row .col input, .section-contact__content form .row .col textarea {
   width: 100%;
   border: none;
   outline: none;
@@ -355,17 +314,17 @@ form .row .col input, form .row .col textarea {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 1.2rem;
 }
-form .row .col input:focus, form .row .col textarea:focus {
+.section-contact__content form .row .col input:focus, .section-contact__content form .row .col textarea:focus {
   border-color: #734429;
 }
-form .row .col:first-child {
+.section-contact__content form .row .col:first-child {
   display: flex;
   flex-direction: column;
 }
-form textarea {
+.section-contact__content form textarea {
   resize: none;
 }
-form input[type=submit] {
+.section-contact__content form input[type=submit] {
   margin-bottom: 1em;
 }
 

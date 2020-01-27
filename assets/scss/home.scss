@@ -1,41 +1,5 @@
 @import "main";
 
-nav {
-    padding: 1.5em 0;
-    position: absolute;
-    width: 100%;
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    img {
-        max-width: 250px;
-    }
-
-    ul {
-        display: flex;
-        align-items: center;
-
-        li:nth-child(1), li:nth-child(2) {
-            margin-right: 2em;
-        }
-
-        a {
-            color: white;
-            font-family: $headers-font;
-            text-shadow: 0 0 2px black;
-            font-size: 1.3rem;
-
-            &:hover {
-                color: $green;
-            }
-        }
-    }
-}
-
 .hero {
     background: linear-gradient(
         to right,
@@ -55,20 +19,15 @@ nav {
 
     h1 {
         color: white;
-        font-family: $headers-font;
+        font-family: $title-font;
         font-size: 2.5rem;
         text-align: center;
         text-shadow: 0 0 2px black;
         margin-bottom: 1em;
-    }
-
-    img {
-        max-width: 500px;
-        margin-bottom: 2em;
+        line-height: 1.8;
     }
 }
 
-.section-about,
 .section-how, 
 .section-contact {
     height: 100vh;
@@ -78,19 +37,16 @@ nav {
     text-align: center;
 }
 
-.section-about__header, 
-.section-about__content,
-.section-how__header, 
+.section-how__header,
 .section-how__content,
 .section-contact__header,
 .section-contact__content {
     padding: 2em 0;
 }
 
-.section-about__header,
 .section-how__header {
     h2 {
-        font-family: $headers-font;
+        font-family: $title-font;
         font-size: 2rem;
         color: $brown;
         margin-bottom: .5em;
@@ -104,20 +60,8 @@ nav {
     }
 }
 
-.section-about__content {
-    padding: 0 5em;
-    
-    p {
-        font-family: $text-font-regular, sans-serif;
-        font-size: 1.2rem;
-        line-height: 1.8;
-        margin-bottom: 3em;
-    }
-}
-
 .section-how__content {
     display: flex;
-    margin-bottom: 2em;
 
     div {
         padding: 0 1em;
@@ -131,21 +75,17 @@ nav {
     }
 
     h3 {
-        font-family: $headers-font;
+        font-family: $title-font;
         font-size: 1.4rem;
         color: $brown;
         margin-bottom: .5em;
     }
 
     p {
-        font-family: $text-font-regular, sans-serif;
+        font-family: $text-font;
         font-size: 1.2rem;
         line-height: 1.8;
-        margin-bottom: 3em;
-    }
-
-    span {
-        font-family: $text-font-bold, sans-serif;
+        margin-bottom: 2em;
     }
 }
 
@@ -159,21 +99,16 @@ nav {
 
     p {
         color: white;
-        font-family: $text-font-bold, sans-serif;
+        font-family: $title-font;
         font-size: 1.2rem;
         line-height: 1.8;
         margin-bottom: 3em;
     }
 }
 
-.section-contact__header,
-.section-contact__content {
-    margin-top: 2em;
-}
-
 .section-contact__header {
     h2 {
-        font-family: $headers-font;
+        font-family: $title-font;
         font-size: 2rem;
         color: white;
         margin-bottom: .5em;
@@ -187,52 +122,54 @@ nav {
     }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .row {
+.section-contact__content {
+    form {
         display: flex;
-        width: 100%;
-        margin-bottom: 2em;
+        flex-direction: column;
+        align-items: center;
 
-        .col {
-            padding: 0 1em;
+        .row {
+            display: flex;
             width: 100%;
+            margin-bottom: 2em;
 
-            input {
-                margin-bottom: 1.2em;
-                padding: .12em 0;
-            }
-
-            input, textarea {
+            .col {
+                padding: 0 1em;
                 width: 100%;
-                border: none;
-                outline: none;
-                background: none;
-                border-bottom: 3px solid white;
-                color: white;
-                font-family: $text-font-regular, sans-serif;
-                font-size: 1.2rem;
 
-                &:focus {
-                    border-color: $brown;
+                input {
+                    margin-bottom: 1.2em;
+                    padding: .12em 0;
+                }
+
+                input, textarea {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    border-bottom: 3px solid white;
+                    color: white;
+                    font-family: $text-font;
+                    font-size: 1.2rem;
+
+                    &:focus {
+                        border-color: $brown;
+                    }
                 }
             }
+
+            .col:first-child {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
-        .col:first-child {
-            display: flex;
-            flex-direction: column;
+        textarea {
+            resize: none;
         }
-    }
 
-    textarea {
-        resize: none;
-    }
-
-    input[type=submit] {
-        margin-bottom: 1em;
+        input[type=submit] {
+            margin-bottom: 1em;
+        }
     }
 }

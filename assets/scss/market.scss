@@ -1,5 +1,32 @@
 @import "main";
-@import "navmenu";
+
+.hero {
+    background: linear-gradient(
+        to right,
+        rgba(black, .6), rgba(black, .6)
+        ), url("/assets/img/hero_market.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: $title-font;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 0 0 2px black;
+        margin-bottom: 1em;
+        line-height: 1.8;
+    }
+}
 
 .section-products {
     padding: 5em 0;
@@ -17,7 +44,7 @@
     }
 
     h4 {
-        font-family: $headers-font;
+        font-family: $title-font;
         font-size: 1.8rem;
         color: $brown;
         margin-bottom: .5em;
@@ -32,7 +59,7 @@
 
 .section-products__left {
     input[type=search] {
-        font-family: $text-font-regular, sans-serif;
+        font-family: $text-font;
         font-size: 1.2rem;
         padding: .5em;
         margin-top: 2em;
@@ -48,10 +75,11 @@
 
     #products-list {
         margin-top: 2em;
-        font-family: $text-font-regular, sans-serif;
+        font-family: $text-font;
         font-size: 1.3rem;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
         h5 {
             font-size: 1.3rem;
@@ -59,9 +87,6 @@
         }
 
         .product-card {
-            width: 40%;
-            margin-right: 2em;
-            margin-bottom: 2em;
             text-align: center;
             border: 0;
             box-shadow: 0 0 5px black;
