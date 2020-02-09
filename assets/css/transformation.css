@@ -207,9 +207,14 @@ header h1 {
   line-height: 1.8;
 }
 
-.section-sheet__header,
+.section-sheet__header {
+  padding: 5em 10em;
+}
+
 .section-sheet__content {
-  padding: 5em 0;
+  padding-bottom: 5em;
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 .section-sheet__header h2 {
@@ -222,6 +227,38 @@ header h1 {
   width: 100px;
   border-width: 2px;
   border-color: #734429;
+}
+
+#transform-sheet {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5em;
+}
+.input-group > label {
+  color: #734429;
+  font-family: "Lato-Medium", sans-serif;
+}
+.input-group input, .input-group textarea {
+  padding: 0.5em;
+}
+.input-group input, .input-group textarea {
+  resize: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.input-group label, .input-group input, .input-group textarea, .input-group select {
+  font-size: 1.2rem;
+}
+.input-group label, .input-group .radio-group {
+  padding-bottom: 0.5em;
+}
+.input-group .radio-group label {
+  margin-left: 0.5em;
 }
 
 /*# sourceMappingURL=transformation.css.map */

@@ -7,8 +7,8 @@ $(function() {
                 <img src="assets/img/thumb.svg" alt="">
                 
                 <div>
-                    <h5>Production de manioc</h5>
-                    <p>150000 FCFA</p>
+                    <h5>Nom du produit</h5>
+                    <p>Prix en FCFA</p>
                     <a href="#" class="btn-link btn-link__header add-to-cart">Ajouter au panier</a>
                 </div>
             </div>

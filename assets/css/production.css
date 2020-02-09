@@ -243,7 +243,7 @@ header h1 {
   color: #734429;
   font-family: "Lato-Medium", sans-serif;
 }
-.input-group input, .input-group textarea, .input-group select {
+.input-group input, .input-group textarea {
   padding: 0.5em;
 }
 .input-group input, .input-group textarea {

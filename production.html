@@ -79,13 +79,13 @@
                     </div>
 
                     <div class="input-group">
-                        <label for="dob">Date de naissance</label>
-                        <input type="date" id="dob">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="text" id="phone">
                     </div>
 
                     <div class="input-group">
-                        <label for="pob">Lieu de naissance</label>
-                        <input type="text" id="pob">
+                        <label for="dob">Date de naissance</label>
+                        <input type="date" id="dob">
                     </div>
 
                     <div class="input-group">
@@ -98,7 +98,7 @@
 
                         <div class="radio-group">
                             <input type="radio" name="sex">
-                            <label for="male">Femme</label>
+                            <label for="female">Femme</label>
                         </div>
                     </div>
 
@@ -112,7 +112,10 @@
 
                     <div class="input-group">
                         <label for="country">Ville/Commune</label>
-                        <input type="text" id="city">
+
+                        <select id="city">
+                            <option value="Daloa">Daloa</option>
+                        </select>
                     </div>
 
                     <div class="input-group">
@@ -127,16 +130,26 @@
                             <input type="radio" name="pb">
                             <label for="male">Je veux amélorer ma production</label>
                         </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">Je n'arrive pas à écouler ma production</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">Je veux apprendre à protéger ma plantation contre les maladies</label>
+                        </div>
                     </div>
 
                     <div class="input-group">
                         <label for="country">
-                            Décrivez en quelques lignes vos difficultés et de quoi vous avez besoin?
+                            Expliquez en quelques lignes vos difficultés et de quoi vous avez besoin?
                         </label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
 
-                    <button class="btn-link btn-link__section">Enregistrer ma fiche</button>
+                    <button class="btn-link btn-link__section">Envoyer</button>
                 </form>
             </div>
         </div>

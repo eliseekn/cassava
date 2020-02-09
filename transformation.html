@@ -62,12 +62,101 @@
     <section class="section-sheet" id="fiche-suivi">
         <div class="container">
             <div class="section-sheet__header">
-                <h2>Fiche de suivi</h2>
+                <h2>Fiche de renseignement</h2>
                 <hr noshade="noshade">
             </div>
 
             <div class="section-sheet__content">
+                <form id="transform-sheet">
+                    <div class="input-group">
+                        <label for="last-name">Nom</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="first-name">Prénoms</label>
+                        <input type="text" id="first-name">
+                    </div>
 
+                    <div class="input-group">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="text" id="phone">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="dob">Date de naissance</label>
+                        <input type="date" id="dob">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Vous êtes un(e)</label>
+
+                        <div class="radio-group">
+                            <input type="radio" name="sex">
+                            <label for="male">Homme</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="sex">
+                            <label for="female">Femme</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">Pays</label>
+
+                        <select id="country">
+                            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">Ville/Commune</label>
+
+                        <select id="city">
+                            <option value="Daloa">Daloa</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Quel type de produit voulez-vous obtenir?</label>
+
+                        <select id="product">
+                            <option value="Attiéké" selected>Attiéké</option>
+                            <option value="Farine">Farine</option>
+                            <option value="Placali">Placali</option>
+                            <option value="Cocondé">Cocondé</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Quel est votre principal problème?</label>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">J'ai le matériel de transformation mais je ne sais pas l'utiliser</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">Je ne sais pas où me procurer du matériel de transformation</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">Je cherche un marché où vendre mes produits transfomés</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">
+                            Expliquez en quelques lignes vos difficultés et de quoi vous avez besoin?
+                        </label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button class="btn-link btn-link__section">Envoyer</button>
+                </form>
             </div>
         </div>
     </section>
