@@ -2,29 +2,35 @@
 @font-face {
     font-family: 'Roboto-Regular';
     src: url('/assets/fonts/Roboto/Roboto-Regular.eot');
-    src: url('/assets/fonts/Roboto/Roboto-Regular.woff') format('woff');
+	src: url('/assets/fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+		url('/assets/fonts/Roboto/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: url('/assets/fonts/Roboto/Roboto-Bold.eot');
-    src: url('/assets/fonts/Roboto/Roboto-Bold.woff') format('woff');
+    font-family: 'Lato-Medium';
+    src: url('/assets/fonts/Lato/Lato-Medium.eot');
+	src: url('/assets/fonts/Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Lato/Lato-Medium.woff2') format('woff2'),
+		url('/assets/fonts/Lato/Lato-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('/assets/fonts/Lato/Lato-Bold.eot');
+	src: url('/assets/fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+		url('/assets/fonts/Lato/Lato-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Baloo-Bhai';
-    src: url('/assets/fonts/Baloo-Bhai/BalooBhai-Regular.eot');
-    src: url('/assets/fonts/Baloo-Bhai/BalooBhai-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-//$title-font: "Baloo-Bhai";
-$title-font: "Roboto-Bold", sans-serif;
+$title-font: "Lato-Bold", sans-serif;
+$medium-font: "Lato-Medium", sans-serif;
 $text-font: "Roboto-Regular", sans-serif;
 
 //colors
@@ -43,6 +49,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: $text-font;
+}
+
 img {
     width: 100%;
 }
@@ -53,14 +63,10 @@ ul {
 
 a {
     text-decoration: none;
-
-    &:hover {
-        text-decoration: none;
-    }
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1030px;
     margin: 0 auto;
 }
@@ -115,7 +121,7 @@ a {
     cursor: pointer;
     padding: .8em 2em !important;
     font-size: 1.2rem;
-    font-family: $text-font;
+    font-family: $medium-font;
     border: none;
     border-radius: 5px;
 }
@@ -131,12 +137,12 @@ a {
 }
 
 .btn-link__section {
-    background-color: $brown;
-    color: white;
+    background-color: $brown !important;
+    color: white !important;
 
     &:hover {
-        background-color: $green;
-        box-shadow: 0 0 5px $green;
+        background-color: $green !important;
+        box-shadow: 0 0 5px $green !important;
     }
 }
 
@@ -159,7 +165,7 @@ footer {
 
     p {
         color: white;
-        font-family: $title-font;
+        font-family: $medium-font;
         font-size: 1.1rem;
         line-height: 1.8;
     }

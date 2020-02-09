@@ -52,22 +52,92 @@
         </div>
     </nav>
 
-    <div class="hero">
+    <header>
         <div class="container">
             <h1>Nous assurons le suivi de votre production depuis la mise en terre jusqu'à la récolte.</h1>
             <a href="#fiche-suivi" class="btn-link btn-link__header">Commencer le suivi</a>
         </div>
-    </div>
+    </header>
 
     <section class="section-sheet" id="fiche-suivi">
         <div class="container">
             <div class="section-sheet__header">
-                <h2>Fiche de suivi</h2>
+                <h2>Fiche de renseignement</h2>
                 <hr noshade="noshade">
             </div>
 
             <div class="section-sheet__content">
+                <form id="production-sheet">
+                    <div class="input-group">
+                        <label for="last-name">Nom</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="first-name">Prénoms</label>
+                        <input type="text" id="first-name">
+                    </div>
 
+                    <div class="input-group">
+                        <label for="dob">Date de naissance</label>
+                        <input type="date" id="dob">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pob">Lieu de naissance</label>
+                        <input type="text" id="pob">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Vous êtes un(e)</label>
+
+                        <div class="radio-group">
+                            <input type="radio" name="sex">
+                            <label for="male">Homme</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="sex">
+                            <label for="male">Femme</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">Pays</label>
+
+                        <select id="country">
+                            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">Ville/Commune</label>
+                        <input type="text" id="city">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Quel est votre principal problème?</label>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">Je veux apprendre à produire du manioc</label>
+                        </div>
+
+                        <div class="radio-group">
+                            <input type="radio" name="pb">
+                            <label for="male">Je veux amélorer ma production</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">
+                            Décrivez en quelques lignes vos difficultés et de quoi vous avez besoin?
+                        </label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button class="btn-link btn-link__section">Enregistrer ma fiche</button>
+                </form>
             </div>
         </div>
     </section>

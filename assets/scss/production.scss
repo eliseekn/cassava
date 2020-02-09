@@ -1,6 +1,6 @@
 @import "main";
 
-.hero {
+header {
     background: linear-gradient(
         to right,
         rgba(black, .6), rgba(black, .6)
@@ -28,9 +28,14 @@
     }
 }
 
-.section-sheet__header,
+.section-sheet__header {
+    padding: 5em 10em;
+}
+
 .section-sheet__content {
-    padding: 5em 0;
+    padding-bottom: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .section-sheet__header {
@@ -45,5 +50,45 @@
         width: 100px;
         border-width: 2px;
         border-color: $brown;
+    }
+}
+
+#production-sheet {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+
+    & > label {
+        color: $brown;
+        font-family: $medium-font;
+    }
+
+    input, textarea, select {
+        padding: .5em;
+    }
+
+    input, textarea {
+        resize: none;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    label, input, textarea, select {
+        font-size: 1.2rem;
+    }
+
+    label, .radio-group {
+        padding-bottom: .5em;
+    }
+
+    .radio-group {
+        label {
+            margin-left: .5em;
+        }
     }
 }
