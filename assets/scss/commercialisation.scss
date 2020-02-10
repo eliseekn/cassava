@@ -1,58 +1,39 @@
-@import "main";
+//import styles
+@import "tools/mixins";
+@import "layout/main";
 
+//home styles
 header {
-    background: linear-gradient(
-        to right,
-        rgba(black, .6), rgba(black, .6)
-        ), url("/assets/img/hero_market.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    @include header-background("/assets/img/bg/commercialisation.jpg");
+}
+
+#fiche-produit {
+    .section-header {
+        @include section-header($brown);
+
+        padding: 5em 10em;
+
+        hr {
+            margin: 0;
+        }
     }
 
-    h1 {
-        color: white;
-        font-family: $title-font;
-        font-size: 2.5rem;
-        text-align: center;
-        text-shadow: 0 0 2px black;
-        margin-bottom: 1em;
-        line-height: 1.8;
+    .section-content {
+        padding-bottom: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    form {
+        @include form-sheet();
     }
 }
 
-.section-sheet__header,
-.section-sheet__content {
-    padding: 5em 0;
-}
-
-.section-sheet__header {
-    h2 {
-        font-family: $title-font;
-        font-size: 2rem;
-        color: $brown;
-        margin-bottom: .5em;
-    }
-
-    hr {
-        width: 100px;
-        border-width: 2px;
-        border-color: $brown;
-    }
-}
-
-.button-group {
+.btn-group {
     display: flex;
     align-items: center;
 
     a:last-child {
-        margin-left: 2em;
+        margin-left: 1em;
     }
 }

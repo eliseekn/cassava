@@ -1,0 +1,53 @@
+//import styles
+@import "tools/mixins";
+@import "layout/main";
+
+.register-card {
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-card {
+    a {
+        color: $brown;
+        text-decoration: underline;
+    }
+
+    p {
+        margin-top: 1em;
+    }
+}
+
+.login-card,
+.register-card {
+    .container {
+        max-width: 400px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    img {
+        margin-bottom: 3em;
+        width: 300px;
+    }
+
+    .section-header {
+        @include section-header($brown);
+
+        padding-bottom: 1em;
+    }
+    
+    form {
+        @include form-sheet();
+
+        .inline {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}

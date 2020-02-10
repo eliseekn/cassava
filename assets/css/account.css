@@ -225,82 +225,101 @@ footer a {
   color: #f2e205;
 }
 
-header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/bg/production.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-}
-header .container {
+.register-card {
+  padding: 5em 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-header h1 {
-  color: white;
-  font-family: "Lato-Bold", sans-serif;
-  font-size: 2.5rem;
   text-align: center;
-  text-shadow: 0 0 2px black;
-  margin-bottom: 1em;
-  line-height: 1.8;
 }
 
-#fiche-suivi .section-header {
-  padding-bottom: 3em;
-  padding: 5em 10em;
+.login-card a {
+  color: #734429;
+  text-decoration: underline;
 }
-#fiche-suivi .section-header h2 {
+.login-card p {
+  margin-top: 1em;
+}
+
+.login-card .container,
+.register-card .container {
+  max-width: 400px;
+}
+.login-card p,
+.register-card p {
+  font-size: 1.2rem;
+}
+.login-card img,
+.register-card img {
+  margin-bottom: 3em;
+  width: 300px;
+}
+.login-card .section-header,
+.register-card .section-header {
+  padding-bottom: 3em;
+  padding-bottom: 1em;
+}
+.login-card .section-header h2,
+.register-card .section-header h2 {
   font-family: "Lato-Bold", sans-serif;
   font-size: 2rem;
   color: #734429;
   margin-bottom: 0.5em;
 }
-#fiche-suivi .section-header hr {
+.login-card .section-header hr,
+.register-card .section-header hr {
   width: 100px;
   border-width: 2px;
   border-color: #734429;
   margin: 0 auto;
 }
-#fiche-suivi .section-header hr {
-  margin: 0;
-}
-#fiche-suivi .section-content {
-  padding-bottom: 5em;
-  padding-left: 10em;
-  padding-right: 10em;
-}
-#fiche-suivi form form {
+.login-card form form,
+.register-card form form {
   display: flex;
   flex-direction: column;
 }
-#fiche-suivi form .input-group {
+.login-card form .input-group,
+.register-card form .input-group {
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5em;
 }
-#fiche-suivi form .input-group > label {
+.login-card form .input-group > label,
+.register-card form .input-group > label {
   color: #734429;
   font-family: "Lato-Medium", sans-serif;
 }
-#fiche-suivi form .radio-group label {
+.login-card form .radio-group label,
+.register-card form .radio-group label {
   margin-left: 0.5em;
 }
-#fiche-suivi form textarea {
+.login-card form textarea,
+.register-card form textarea {
   resize: none;
 }
-#fiche-suivi form input, #fiche-suivi form textarea {
+.login-card form input, .login-card form textarea,
+.register-card form input,
+.register-card form textarea {
   padding: 0.3em;
   border: 1px solid black;
   border-radius: 5px;
 }
-#fiche-suivi form label, #fiche-suivi form input, #fiche-suivi form textarea, #fiche-suivi form select {
+.login-card form label, .login-card form input, .login-card form textarea, .login-card form select,
+.register-card form label,
+.register-card form input,
+.register-card form textarea,
+.register-card form select {
   font-size: 1.2rem;
 }
-#fiche-suivi form label, #fiche-suivi form .radio-group {
+.login-card form label, .login-card form .radio-group,
+.register-card form label,
+.register-card form .radio-group {
   padding-bottom: 0.5em;
 }
+.login-card form .inline,
+.register-card form .inline {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-/*# sourceMappingURL=production.css.map */
+/*# sourceMappingURL=account.css.map */

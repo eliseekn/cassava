@@ -1,95 +1,44 @@
-@import "main";
+//import styles
+@import "tools/mixins";
+@import "layout/main";
 
+//home styles
 header {
-    background: linear-gradient(
-        to right,
-        rgba(black, .6), rgba(black, .6)
-        ), url("/assets/img/hero.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    @include header-background("/assets/img/bg/accueil.jpg");
+}
+
+#comment-ca-marche {
+    .section-header {
+        @include section-header($brown);
     }
 
-    h1 {
-        color: white;
-        font-family: $title-font;
-        font-size: 2.5rem;
-        text-align: center;
-        text-shadow: 0 0 2px black;
-        margin-bottom: 1em;
-        line-height: 1.8;
+    .section-content {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        li {
+            font-size: 3rem;
+            color: $green;
+            margin-bottom: .5em;
+        }
+
+        h3 {
+            font-family: $medium-font;
+            font-size: 1.4rem;
+            color: $brown;
+            margin-bottom: .5em;
+        }
+
+        p {
+            font-family: $text-font;
+            font-size: 1.2rem;
+            margin-bottom: 2em;
+        }
     }
 }
 
-.section-how, 
-.section-contact {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.section-how__header,
-.section-how__content,
-.section-contact__header,
-.section-contact__content {
-    padding: 2em 0;
-}
-
-.section-how__header {
-    h2 {
-        font-family: $title-font;
-        font-size: 2rem;
-        color: $brown;
-        margin-bottom: .5em;
-    }
-
-    hr {
-        width: 100px;
-        border-width: 2px;
-        border-color: $brown;
-        margin: 0 auto;
-    }
-}
-
-.section-how__content {
-    display: flex;
-
-    div {
-        padding: 0 1em;
-        width: 50%;
-    }
-
-    li {
-        font-size: 3rem;
-        color: $green;
-        margin-bottom: .5em;
-    }
-
-    h3 {
-        font-family: $medium-font;
-        font-size: 1.4rem;
-        color: $brown;
-        margin-bottom: .5em;
-    }
-
-    p {
-        font-family: $text-font;
-        font-size: 1.2rem;
-        line-height: 1.8;
-        margin-bottom: 2em;
-    }
-}
-
-.section-contact {
+#contact {
     background: linear-gradient(
         to right,
         rgba($green, .9), rgba($green, .9)
@@ -101,75 +50,57 @@ header {
         color: white;
         font-family: $title-font;
         font-size: 1.2rem;
-        line-height: 1.8;
         margin-bottom: 3em;
     }
-}
 
-.section-contact__header {
-    h2 {
-        font-family: $title-font;
-        font-size: 2rem;
-        color: white;
-        margin-bottom: .5em;
+    .section-header {
+        @include section-header(white);
     }
 
-    hr {
-        width: 100px;
-        border-width: 2px;
-        border-color: white;
-        margin: 0 auto;
-    }
-}
-
-.section-contact__content {
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
 
-        .row {
-            display: flex;
-            width: 100%;
-            margin-bottom: 2em;
+    .row {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2em;
+    }
 
-            .col {
-                padding: 0 1em;
-                width: 100%;
+    .col-left, .col-right {
+        padding: 0 1em;
+        width: 100%;
+    }
 
-                input {
-                    margin-bottom: 1.2em;
-                    padding: .12em 0;
-                }
+    .col-left {
+        display: flex;
+        flex-direction: column;
+    }
 
-                input, textarea {
-                    width: 100%;
-                    border: none;
-                    outline: none;
-                    background: none;
-                    border-bottom: 3px solid white;
-                    color: white;
-                    font-family: $text-font;
-                    font-size: 1.2rem;
+    input {
+        margin-bottom: 1.1em;
+        padding: .5em 0;
+    }
 
-                    &:focus {
-                        border-color: $brown;
-                    }
-                }
-            }
+    input, textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 3px solid white;
+        color: white;
+        font-family: $text-font;
+        font-size: 1.2rem;
+        transition: all .3s ease-out;
 
-            .col:first-child {
-                display: flex;
-                flex-direction: column;
-            }
+        &:focus {
+            border-color: $brown;
         }
-
-        textarea {
-            resize: none;
-        }
-
-        input[type=submit] {
-            margin-bottom: 1em;
-        }
+    }
+    
+    textarea {
+        resize: none;
     }
 }

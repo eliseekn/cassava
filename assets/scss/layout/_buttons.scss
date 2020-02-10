@@ -1,0 +1,79 @@
+//buttons styles
+.btn__brown {
+    $colors: white, $brown, white, $green;
+    @include btn-style($colors...);
+}
+
+.btn__green {
+    $colors: white, $green, white, $brown;
+    @include btn-style($colors...);
+}
+
+.btn__white {
+    $colors: $brown, white, white, $brown;
+    @include btn-style($colors...);
+}
+
+//scroll to top button
+#scroll-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 11;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: $brown;
+    transition: all .2s ease-out;
+    
+    li {
+        font-size: 2rem;
+        margin-top: .25em;
+    }
+
+    &:hover {
+        color: $green;
+        box-shadow: 0 0 5px $brown !important;
+    }
+}
+
+//show cart button
+#show-cart {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 80px;
+    z-index: 11;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: $brown;
+    transition: all .2s ease-out;
+    
+    li {
+        font-size: 2rem;
+        margin-top: .25em;
+    }
+
+    span {
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: bold;
+        right: 15px;
+        color: $green;
+    }
+
+    &:hover {
+        color: $green;
+        box-shadow: 0 0 5px $brown !important;
+
+        span {
+            color: white;
+        }
+    }
+}

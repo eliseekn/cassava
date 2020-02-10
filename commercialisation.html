@@ -39,15 +39,15 @@
     <script src="assets/js/scroll-top.js"></script>
 </head>
 <body id="page-top">
-    <nav class="nav-menu">
+    <nav>
         <div class="container">
             <a href="#" title="Accueil">
-                <img src="assets/img/logo/logo_3.png" alt="Logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
             </a>
 
             <ul>
                 <a href="index.html">Accueil</a>
-                <a href="">Connexion </a>
+                <a href="connexion.html">Connexion </a>
             </ul>
         </div>
     </nav>
@@ -56,22 +56,39 @@
         <div class="container">
             <h1>Nous vous aidons à écouler vos produits sur notre marché en ligne.</h1>
             
-            <div class="button-group">
-                <a href="#fiche-produit" class="btn-link btn-link__header">Créer une fiche produit</a>
-                <a href="cassava-market.html" class="btn-link btn-link__header">Accéder au marché</a>
+            <div class="btn-group">
+                <a href="#fiche-produit" class="btn__green">Créer une fiche produit</a>
+                <a href="cassava-market.html" class="btn__green">Accéder au marché</a>
             </div>
         </div>
     </header>
 
-    <section class="section-sheet" id="fiche-produit">
+    <section id="fiche-produit">
         <div class="container">
-            <div class="section-sheet__header">
+            <div class="section-header">
                 <h2>Fiche produit</h2>
                 <hr noshade="noshade">
             </div>
 
-            <div class="section-sheet__content">
+            <div class="section-content">
+                <form action="">
+                    <div class="input-group">
+                        <label>Description du produit</label>
+                        <input type="text" name="description" placeholder="Ex: Tomates africaines 2kg">
+                    </div>
 
+                    <div class="input-group">
+                        <label>Prix en FCFA</label>
+                        <input type="number" name="price" min="1">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Importer une image du produit</label>
+                        <input type="file" name="image">
+                    </div>
+
+                    <button type="submit" class="btn__brown">Créer la fiche</button>
+                </form>
             </div>
         </div>
     </section>

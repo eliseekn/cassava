@@ -1,0 +1,99 @@
+//import styles
+@import "tools/mixins";
+@import "layout/main";
+
+//home styles
+header {
+    @include header-background("/assets/img/bg/commercialisation.jpg");
+}
+
+#produits {
+    margin-top: 5em;
+    
+    .section-header {
+        @include section-header($brown);
+
+        hr {
+            margin: 0;
+        }
+    }
+
+    .container {
+        display: flex;
+
+        .col-left {
+            width: 30%;
+        }
+
+        .col-right {
+            width: 70%;
+            margin-left: 2em;
+        }
+    }
+
+    .col-left {
+        @include form-sheet();
+
+        button {
+            margin-top: 1em;
+        }
+    }
+
+    .col-right {
+        #products-list {
+            font-family: $text-font;
+            font-size: 1.3rem;
+            display: grid;
+            grid-gap: 1.5em;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            h5 {
+                font-size: 1.3rem;
+                margin: .5em 0;
+            }
+
+            .product-card {
+                text-align: center;
+                border: 0;
+                box-shadow: 0 0 5px black;
+                border-radius: 5px;
+
+                p {
+                    margin-bottom: 1.5em;
+                }
+
+                div {
+                    padding-bottom: 2em;
+                }
+            }
+        }
+    }
+}
+
+//pagination
+.pagination-bar {
+    padding: 5em 0;
+
+    .pagination {
+        display: flex;
+    
+        a {
+            font-family: $title-font;
+            font-size: 1.2rem;
+            border: 1px solid $brown;
+            color: $brown;
+            padding: .5em 1em;
+    
+            &:hover {
+                color: white;
+                background-color: $brown;
+            }
+        }
+    
+        .current-page {
+            color: white !important;
+            background-color: $brown !important;
+        }
+    }
+}
+

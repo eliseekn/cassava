@@ -226,7 +226,7 @@ footer a {
 }
 
 header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/bg/production.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/bg/commercialisation.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -248,59 +248,114 @@ header h1 {
   line-height: 1.8;
 }
 
-#fiche-suivi .section-header {
-  padding-bottom: 3em;
-  padding: 5em 10em;
+#produits {
+  margin-top: 5em;
 }
-#fiche-suivi .section-header h2 {
+#produits .section-header {
+  padding-bottom: 3em;
+}
+#produits .section-header h2 {
   font-family: "Lato-Bold", sans-serif;
   font-size: 2rem;
   color: #734429;
   margin-bottom: 0.5em;
 }
-#fiche-suivi .section-header hr {
+#produits .section-header hr {
   width: 100px;
   border-width: 2px;
   border-color: #734429;
   margin: 0 auto;
 }
-#fiche-suivi .section-header hr {
+#produits .section-header hr {
   margin: 0;
 }
-#fiche-suivi .section-content {
-  padding-bottom: 5em;
-  padding-left: 10em;
-  padding-right: 10em;
+#produits .container {
+  display: flex;
 }
-#fiche-suivi form form {
+#produits .container .col-left {
+  width: 30%;
+}
+#produits .container .col-right {
+  width: 70%;
+  margin-left: 2em;
+}
+#produits .col-left form {
   display: flex;
   flex-direction: column;
 }
-#fiche-suivi form .input-group {
+#produits .col-left .input-group {
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5em;
 }
-#fiche-suivi form .input-group > label {
+#produits .col-left .input-group > label {
   color: #734429;
   font-family: "Lato-Medium", sans-serif;
 }
-#fiche-suivi form .radio-group label {
+#produits .col-left .radio-group label {
   margin-left: 0.5em;
 }
-#fiche-suivi form textarea {
+#produits .col-left textarea {
   resize: none;
 }
-#fiche-suivi form input, #fiche-suivi form textarea {
+#produits .col-left input, #produits .col-left textarea {
   padding: 0.3em;
   border: 1px solid black;
   border-radius: 5px;
 }
-#fiche-suivi form label, #fiche-suivi form input, #fiche-suivi form textarea, #fiche-suivi form select {
+#produits .col-left label, #produits .col-left input, #produits .col-left textarea, #produits .col-left select {
   font-size: 1.2rem;
 }
-#fiche-suivi form label, #fiche-suivi form .radio-group {
+#produits .col-left label, #produits .col-left .radio-group {
   padding-bottom: 0.5em;
 }
+#produits .col-left button {
+  margin-top: 1em;
+}
+#produits .col-right #products-list {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.3rem;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#produits .col-right #products-list h5 {
+  font-size: 1.3rem;
+  margin: 0.5em 0;
+}
+#produits .col-right #products-list .product-card {
+  text-align: center;
+  border: 0;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+}
+#produits .col-right #products-list .product-card p {
+  margin-bottom: 1.5em;
+}
+#produits .col-right #products-list .product-card div {
+  padding-bottom: 2em;
+}
 
-/*# sourceMappingURL=production.css.map */
+.pagination-bar {
+  padding: 5em 0;
+}
+.pagination-bar .pagination {
+  display: flex;
+}
+.pagination-bar .pagination a {
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid #734429;
+  color: #734429;
+  padding: 0.5em 1em;
+}
+.pagination-bar .pagination a:hover {
+  color: white;
+  background-color: #734429;
+}
+.pagination-bar .pagination .current-page {
+  color: white !important;
+  background-color: #734429 !important;
+}
+
+/*# sourceMappingURL=cassava-market.css.map */

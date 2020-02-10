@@ -33,22 +33,22 @@
     <meta name="msapplication-square310x310logo" content="assets/img/logo/favicon/mstile-310x310.png" />
 
     <link rel="stylesheet" href="vendor/fontawesome-5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/market.css">
+    <link rel="stylesheet" href="assets/css/cassava-market.css">
 
     <script src="vendor/jquery-3.4.1.min.js"></script>
     <script src="assets/js/scroll-top.js"></script>
     <script src="assets/js/market.js"></script>
 </head>
 <body id="page-top">
-    <nav class="nav-menu">
+    <nav>
         <div class="container">
             <a href="#" title="Accueil">
-                <img src="assets/img/logo/logo_3.png" alt="Logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
             </a>
 
             <ul>
                 <a href="index.html">Accueil</a>
-                <a href="">Connexion</a>
+                <a href="connexion.html">Connexion</a>
                 
                 <a href="">
                     <li class="fas fa-shopping-cart"></li> Panier (0)
@@ -60,29 +60,33 @@
     <header>
         <div class="container">
             <h1>Marché de vente en ligne de manioc et produits dérivés.</h1>
-            <a href="#produits" class="btn-link btn-link__header">Voir les produits</a>
+            <a href="#produits" class="btn__green">Voir les produits</a>
         </div>
     </header>
 
-    <section class="section-products" id="produits">
+    <section id="produits">
         <div class="container">
-            <div class="section-products__left">
-                <h4>Rechercher</h4>
-                <hr noshade="noshade">
+            <div class="col-left">
+                <div class="section-header">
+                    <h2>Rechercher</h2>
+                    <hr noshade="noshade">
+                </div>
 
                 <form action="">
                     <input type="search" placeholder="Nom du produit">
-                    <input type="submit" value="Rechercher" class="btn-link btn-link__header">
+                    <button type="submit" class="btn__green">Rechercher</button>
                 </form>
             </div>
     
-            <div class="section-products__right">
-                <h4>Tous les produits</h4>
-                <hr noshade="noshade">
+            <div class="col-right">
+                <div class="section-header">
+                    <h2>Tous les produits</h2>
+                    <hr noshade="noshade">
+                </div>
 
                 <div id="products-list"></div>
 
-                <nav class="pagination-bar">
+                <div class="pagination-bar">
                     <ul class="pagination">
                         <a href="#" class="current-page" title="Page 1">1</a>
                         <a href="#" title="Page 2">2</a>
@@ -92,10 +96,15 @@
                             <li class="fas fa-angle-double-right"></li>
                         </a>
                     </ul>
-                </nav>
+                </div>
             </div>
         </div>
     </section>
+
+    <a href="#" id="show-cart" title="Accéder au panier">
+        <li class="fas fa-shopping-cart"></li>
+        <span>5</span>
+    </a>
 
     <a href="#page-top" id="scroll-top" title="Aller en haut">
         <li class="fas fa-chevron-up"></li>
@@ -108,5 +117,17 @@
             </p>
         </div>
     </footer>
+
+    <script text="text/javasript">
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 180) {
+                    $("#show-cart").fadeIn('slow');
+                } else {
+                    $("#show-cart").fadeOut('slow');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

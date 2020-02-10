@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Cassava - Formation et conseils sur la production de manioc</title>
+    <title>Cassava - Formations et conseils sur la production de manioc</title>
 
     <meta name="author" content="eliseekn">
     <meta name="keywords" content="manioc, production manioc, mise en relation">
@@ -39,15 +39,15 @@
     <script src="assets/js/scroll-top.js"></script>
 </head>
 <body id="page-top">
-    <nav class="nav-menu">
+    <nav>
         <div class="container">
             <a href="#" title="Accueil">
-                <img src="assets/img/logo/logo_3.png" alt="Logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
             </a>
 
             <ul>
                 <a href="index.html">Accueil</a>
-                <a href="">Connexion</a>
+                <a href="connexion.html">Connexion</a>
             </ul>
         </div>
     </nav>
@@ -55,101 +55,52 @@
     <header>
         <div class="container">
             <h1>Nous assurons le suivi de votre production depuis la mise en terre jusqu'à la récolte.</h1>
-            <a href="#fiche-suivi" class="btn-link btn-link__header">Commencer le suivi</a>
+            <a href="#fiche-suivi" class="btn__green">Commencer le suivi</a>
         </div>
     </header>
 
-    <section class="section-sheet" id="fiche-suivi">
+    <section id="fiche-suivi">
         <div class="container">
-            <div class="section-sheet__header">
+            <div class="section-header">
                 <h2>Fiche de renseignement</h2>
                 <hr noshade="noshade">
             </div>
 
-            <div class="section-sheet__content">
-                <form id="production-sheet">
-                    <div class="input-group">
-                        <label for="last-name">Nom</label>
-                        <input type="text" id="last-name">
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="first-name">Prénoms</label>
-                        <input type="text" id="first-name">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="phone">Numéro de téléphone</label>
-                        <input type="text" id="phone">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="dob">Date de naissance</label>
-                        <input type="date" id="dob">
-                    </div>
-
-                    <div class="input-group">
-                        <label>Vous êtes un(e)</label>
-
-                        <div class="radio-group">
-                            <input type="radio" name="sex">
-                            <label for="male">Homme</label>
-                        </div>
-
-                        <div class="radio-group">
-                            <input type="radio" name="sex">
-                            <label for="female">Femme</label>
-                        </div>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="country">Pays</label>
-
-                        <select id="country">
-                            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="country">Ville/Commune</label>
-
-                        <select id="city">
-                            <option value="Daloa">Daloa</option>
-                        </select>
-                    </div>
-
+            <div class="section-content">
+                <form action="">
                     <div class="input-group">
                         <label>Quel est votre principal problème?</label>
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">Je veux apprendre à produire du manioc</label>
+                            <label>Je veux apprendre à produire du manioc</label>
                         </div>
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">Je veux amélorer ma production</label>
+                            <label>Je veux amélorer ma production</label>
                         </div>
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">Je n'arrive pas à écouler ma production</label>
+                            <label>Je n'arrive pas à écouler ma production</label>
                         </div>
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">Je veux apprendre à protéger ma plantation contre les maladies</label>
+                            <label>Je ne sais pas comment protéger mes cultures contre les maladies</label>
                         </div>
                     </div>
 
                     <div class="input-group">
-                        <label for="country">
-                            Expliquez en quelques lignes vos difficultés et de quoi vous avez besoin?
+                        <label for="needs">
+                            Expliquez en quelques lignes vos difficultés et ce dont vous avez besoin?
                         </label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <textarea id="needs" rows="10"></textarea>
                     </div>
 
-                    <button class="btn-link btn-link__section">Envoyer</button>
+                    <button type="submit" class="btn__brown">Envoyer</button>
                 </form>
             </div>
         </div>

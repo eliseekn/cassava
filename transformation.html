@@ -39,15 +39,15 @@
     <script src="assets/js/scroll-top.js"></script>
 </head>
 <body id="page-top">
-    <nav class="nav-menu">
+    <nav>
         <div class="container">
             <a href="#" title="Accueil">
-                <img src="assets/img/logo/logo_3.png" alt="Logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
             </a>
 
             <ul>
                 <a href="index.html">Accueil</a>
-                <a href="">Connexion </a>
+                <a href="connexion.html">Connexion </a>
             </ul>
         </div>
     </nav>
@@ -55,71 +55,21 @@
     <header>
         <div class="container">
             <h1>Nous vous apprenons les meilleures techniques de transformation du manioc.</h1>
-            <a href="#fiche-suivi" class="btn-link btn-link__header">Commencer le suivi</a>
+            <a href="#fiche-suivi" class="btn__green">Commencer le suivi</a>
         </div>
     </header>
 
-    <section class="section-sheet" id="fiche-suivi">
+    <section id="fiche-suivi">
         <div class="container">
-            <div class="section-sheet__header">
+            <div class="section-header">
                 <h2>Fiche de renseignement</h2>
                 <hr noshade="noshade">
             </div>
 
-            <div class="section-sheet__content">
-                <form id="transform-sheet">
+            <div class="section-content">
+                <form action="">
                     <div class="input-group">
-                        <label for="last-name">Nom</label>
-                        <input type="text" id="last-name">
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="first-name">Prénoms</label>
-                        <input type="text" id="first-name">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="phone">Numéro de téléphone</label>
-                        <input type="text" id="phone">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="dob">Date de naissance</label>
-                        <input type="date" id="dob">
-                    </div>
-
-                    <div class="input-group">
-                        <label>Vous êtes un(e)</label>
-
-                        <div class="radio-group">
-                            <input type="radio" name="sex">
-                            <label for="male">Homme</label>
-                        </div>
-
-                        <div class="radio-group">
-                            <input type="radio" name="sex">
-                            <label for="female">Femme</label>
-                        </div>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="country">Pays</label>
-
-                        <select id="country">
-                            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="country">Ville/Commune</label>
-
-                        <select id="city">
-                            <option value="Daloa">Daloa</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <label>Quel type de produit voulez-vous obtenir?</label>
+                        <label for="product">Quel type de produit souhaitez-vous obtenir?</label>
 
                         <select id="product">
                             <option value="Attiéké" selected>Attiéké</option>
@@ -134,28 +84,29 @@
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">J'ai le matériel de transformation mais je ne sais pas l'utiliser</label>
+                            <label>Je ne sais pas où me procurer du matériel de transformation</label>
                         </div>
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">Je ne sais pas où me procurer du matériel de transformation</label>
+                            <label>J'ai le matériel de transformation mais je ne sais pas l'utiliser</label>
                         </div>
 
                         <div class="radio-group">
                             <input type="radio" name="pb">
-                            <label for="male">Je cherche un marché où vendre mes produits transfomés</label>
+                            <label>Je cherche un marché où vendre mes produits transfomés</label>
                         </div>
                     </div>
 
                     <div class="input-group">
-                        <label for="country">
-                            Expliquez en quelques lignes vos difficultés et de quoi vous avez besoin?
+                        <label for="needs">
+                            Expliquez en quelques lignes vos difficultés et ce dont vous avez besoin?
                         </label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <textarea id="needs" rows="10"></textarea>
                     </div>
 
-                    <button class="btn-link btn-link__section">Envoyer</button>
+                    <button type="submit" class="btn__brown">Envoyer</button>
                 </form>
             </div>
         </div>

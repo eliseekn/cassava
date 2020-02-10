@@ -1,0 +1,89 @@
+//import styles
+@import "reset";
+@import "typography";
+@import "colors";
+@import "buttons";
+
+//main styles
+body {
+    font-family: $text-font;
+}
+
+.container {
+    width: 90%;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1.5em 0;
+    position: absolute;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        max-width: 250px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        a:nth-child(1), a:nth-child(2) {
+            margin-right: 1em;
+        }
+
+        a {
+            color: white;
+            font-family: $title-font;
+            font-size: 1.3rem;
+
+            &:hover {
+                color: $green;
+            }
+        }
+
+        a, li {
+            text-shadow: 0 0 2px black;
+        }
+    }
+
+    .fa-shopping-cart {
+        margin-right: .2em;
+        font-size: 1.3rem;
+        color: $green;
+    }
+}
+
+header,
+#comment-ca-marche,
+#contact,
+.login-card {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: $brown;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+
+    p {
+        color: white;
+        font-family: $medium-font;
+        font-size: 1.2rem;
+    }
+
+    a {
+        color: $yellow;
+    }
+}

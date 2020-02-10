@@ -1,94 +1,30 @@
-@import "main";
+//import styles
+@import "tools/mixins";
+@import "layout/main";
 
+//home styles
 header {
-    background: linear-gradient(
-        to right,
-        rgba(black, .6), rgba(black, .6)
-        ), url("/assets/img/hero_transformation.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    h1 {
-        color: white;
-        font-family: $title-font;
-        font-size: 2.5rem;
-        text-align: center;
-        text-shadow: 0 0 2px black;
-        margin-bottom: 1em;
-        line-height: 1.8;
-    }
+    @include header-background("/assets/img/bg/transformation.jpg");
 }
 
-.section-sheet__header {
-    padding: 5em 10em;
-}
+#fiche-suivi {
+    .section-header {
+        @include section-header($brown);
 
-.section-sheet__content {
-    padding-bottom: 5em;
-    padding-left: 10em;
-    padding-right: 10em;
-}
+        padding: 5em 10em;
 
-.section-sheet__header {
-    h2 {
-        font-family: $title-font;
-        font-size: 2rem;
-        color: $brown;
-        margin-bottom: .5em;
-    }
-
-    hr {
-        width: 100px;
-        border-width: 2px;
-        border-color: $brown;
-    }
-}
-
-#transform-sheet {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1.5em;
-
-    & > label {
-        color: $brown;
-        font-family: $medium-font;
-    }
-
-    input, textarea {
-        padding: .5em;
-    }
-
-    input, textarea {
-        resize: none;
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-
-    label, input, textarea, select {
-        font-size: 1.2rem;
-    }
-
-    label, .radio-group {
-        padding-bottom: .5em;
-    }
-
-    .radio-group {
-        label {
-            margin-left: .5em;
+        hr {
+            margin: 0;
         }
+    }
+
+    .section-content {
+        padding-bottom: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    form {
+        @include form-sheet();
     }
 }

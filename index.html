@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Cassava - Mise en relation entre producteurs et acheteurs de manioc et produits dérivés</title>
+    <title>Cassava - Mise en relation entre producteurs et acheteurs de manioc et produits transformés</title>
 
     <meta name="author" content="eliseekn">
     <meta name="keywords" content="manioc, production, transformation, commercialisation, mise en relation">
@@ -45,16 +45,16 @@
     <script src="assets/js/scroll-top.js"></script>
 </head>
 <body id="page-top">
-    <nav class="nav-menu">
+    <nav>
         <div class="container">
             <a href="#" title="Accueil">
-                <img src="assets/img/logo/logo_3.png" alt="Logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
             </a>
 
             <ul>
                 <a href="cassava-market.html">Cassava Market</a>
                 <a href="#contact">Contact</a>
-                <a href="">Connexion</a>
+                <a href="connexion.html">Connexion</a>
             </ul>
         </div>
     </nav>
@@ -62,67 +62,65 @@
     <header>
         <div class="container">
             <h1>De la production à la transformation, nous assurons le suivi tout au long du processus.</h1>
-            <a href="#comment-ca-marche" class="btn-link btn-link__header">Comment ça marche?</a>
+            <a href="#comment-ca-marche" class="btn__green">Comment ça marche?</a>
         </div>
     </header>
 
-    <section class="section-how" id="comment-ca-marche">
+    <section id="comment-ca-marche">
         <div class="container">
-            <div class="section-how__header">
+            <div class="section-header">
                 <h2>Comment ça marche?</h2>
                 <hr noshade="noshade">
             </div>
 
-            <div class="section-how__content">
+            <div class="section-content">
                 <div>
                     <li class="fas fa-seedling"></li>
                     <h3>Production</h3>
                     <p>Voulez-vous vous lancer dans la production de manioc ou améliorer la votre?</p>
-                    <a href="production.html" class="btn-link btn-link__section">Je veux produire</a>
+                    <a href="production.html" class="btn__brown">Je veux produire</a>
                 </div>
 
                 <div>
                     <li class="fas fa-cogs"></li>
                     <h3>Transformation</h3>
                     <p>Avez-vous besoin de vous former aux techniques de transformation du manioc?</p>
-                    <a href="transformation.html" class="btn-link btn-link__section">Je veux transformer</a>
+                    <a href="transformation.html" class="btn__brown">Je veux transformer</a>
                 </div>
 
                 <div>
                     <li class="fas fa-shopping-cart"></li>
                     <h3>Commercialisation</h3>
                     <p>Cherchez-vous un marché où écouler votre production de manioc ou autre produits dérivés?</p>
-                    <a href="commercialisation.html" class="btn-link btn-link__section">Je veux vendre</a>
+                    <a href="commercialisation.html" class="btn__brown">Je veux vendre</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-contact" id="contact">
+    <section id="contact">
         <div class="container">
-            <div class="section-contact__header">
+            <div class="section-header">
                 <h2>Contact</h2>
                 <hr noshade="noshade">
             </div>
 
-            <div class="section-contact__content">
+            <div class="section-content">
                 <form action="">
                     <div class="row">
-                        <div class="col">
-                            <input type="text" id="name" placeholder="Nom" required>
-                            <input type="email" id="email" placeholder="Email" required>
+                        <div class="col-left">
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                            <input type="email" id="email" placeholder="Votre adresse email" required>
                             <input type="text" id="subject" placeholder="Objet" required>
                         </div>
 
-                        <div class="col">
-                            <textarea id="message" rows="5" placeholder="Message"></textarea>
+                        <div class="col-right">
+                            <textarea id="message" rows="7" placeholder="Votre message" required></textarea>
                         </div>
                     </div>
 
-                    <input type="submit" value="Envoyer" class="btn-link btn-link__footer">
+                    <button type="submit" class="btn__white">Envoyer</button>
                 </form>
-
-                <p>Ou appelez au +225 00 00 00 00</p>
             </div>
         </div>
     </section>
@@ -139,5 +137,4 @@
         </div>
     </footer>
 </body>
-
 </html>

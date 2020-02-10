@@ -1,0 +1,107 @@
+//button style
+@mixin btn-style($color, $bg-color, $color-hover, $bg-color-hover) {
+    cursor: pointer;
+    padding: .8em 2em !important;
+    font-size: 1.2rem;
+    font-family: $medium-font;
+    border: none;
+    border-radius: 5px;
+    background-color: $bg-color !important;
+    color: $color !important;
+    transition: all .2s ease-out;
+
+    &:hover {
+        background-color: $bg-color-hover !important;
+        box-shadow: 0 0 5px $bg-color-hover !important;
+        color: $color-hover !important;
+    }
+}
+
+//header style
+@mixin header-background($url) {
+    background: linear-gradient(to right, rgba(black, .6), rgba(black, .6)), url($url) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: $title-font;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 0 0 2px black;
+        margin-bottom: 1em;
+        line-height: 1.8;
+    }
+}
+
+//section header style
+@mixin section-header($color) {
+    padding-bottom: 3em;
+
+    h2 {
+        font-family: $title-font;
+        font-size: 2rem;
+        color: $color;
+        margin-bottom: .5em;
+    }
+
+    hr {
+        width: 100px;
+        border-width: 2px;
+        border-color: $color;
+        margin: 0 auto;
+    }
+}
+
+//form sheet style
+@mixin form-sheet() {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.5em;
+
+        & > label {
+            color: $brown;
+            font-family: $medium-font;
+        }
+
+    }
+
+    .radio-group {
+        label {
+            margin-left: .5em;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+    
+    input, textarea {
+        padding: .3em;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    label, input, textarea, select {
+        font-size: 1.2rem;
+    }
+
+    label, .radio-group {
+        padding-bottom: .5em;
+    }
+}
