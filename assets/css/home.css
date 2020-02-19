@@ -286,7 +286,7 @@ header h1 {
 }
 
 #contact {
-  background: linear-gradient(to right, rgba(99, 166, 68, 0.9), rgba(99, 166, 68, 0.9)), url("/assets/img/tubercules-manioc.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(99, 166, 68, 0.9), rgba(99, 166, 68, 0.9)), url("/assets/img/bg/tubercules.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
